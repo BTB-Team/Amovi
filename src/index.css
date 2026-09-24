@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amovi-primary: #0f172a;
+  --color-amovi-secondary: #2563eb;
+  --color-amovi-accent: #f8fafc;
+}
