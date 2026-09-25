@@ -1,7 +1,72 @@
 @import "tailwindcss";
 
+/* 📥 ۱. معرفی وزن‌های فونت ساحل (دری) */
+@font-face {
+  font-family: 'Sahel';
+  src: url('./assets/fonts/Sahel.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sahel';
+  src: url('./assets/fonts/Sahel-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Sahel';
+  src: url('./assets/fonts/Sahel-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 📥 ۲. معرفی وزن‌های فونت اینتر (انگلیسی) */
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/Inter-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 🎨 ۳. تنظیم رنگ‌های سفارشی بر اساس لوگوی شرکت Amovi */
 @theme {
-  --color-amovi-primary: #0f172a;
-  --color-amovi-secondary: #2563eb;
-  --color-amovi-accent: #f8fafc;
+  --color-amovi-navy: #1E3A8A;   /* آبی سرمه‌ای لوگو */
+  --color-amovi-gold: #F59E0B;   /* نارنجی/طلایی لوگو */
+  --color-amovi-bg: #F8FAFC;     /* پس‌زمینه روشن */
+}
+
+/* 🌐 ۴. اعمال گلوبال فونت‌ها بر اساس جهت صفحه */
+@layer base {
+  html[dir="rtl"] {
+    font-family: 'Sahel', system-ui, sans-serif; /* اعمال فونت ساحل در حالت دری */
+  }
+
+  html[dir="ltr"] {
+    font-family: 'Inter', system-ui, sans-serif; /* اعمال فونت اینتر در حالت انگلیسی */
+  }
+
+  body {
+    background-color: var(--color-amovi-bg);
+    color: #0F172A;
+    margin: 0;
+    padding: 0;
+  }
 }
