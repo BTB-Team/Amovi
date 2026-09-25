@@ -1,71 +1,78 @@
 # 🌍 Amovi Travel — Front-end Project Documentation
 
-این سند به عنوان **Master Roadmap** و رفرنس اصلی مهندسی نرم‌افزار برای توسعه وب‌سایت دوزبانه آژانس سیاحتی **Amovi Travel** تنظیم شده است. تمام تصمیمات معماری، تیمی و ساختاری پیش از شروع کدنویسی در این فایل مستند شده‌اند.
+This document serves as the **Master Roadmap** and the primary software-engineering reference for developing the bilingual website of the **Amovi Travel** tourism agency.
 
 ---
 
-## 🎯 Phase 1 — Requirement Analysis (تحلیل نیازمندی‌ها)
-* **نوع پروژه:** وب‌سایت داینامیک کاتالوگ و ثبت درخواست سفر (Catalog & Booking Request).
-* **تعداد زبان‌ها:** دوزبانه (English / دری) بدون نیاز به پکیج‌های پیچیده خارجی.
-* **ساختار توسعه:** تیمی (۶ نفر عضو نهایی).
-* **قانون طلایی سیستم:** ارسال فرم به هیچ وجه به معنی رزرو قطعی نیست (`Submitting a Request ≠ Booking`). سیستم فاقد درگاه پرداخت آنلاین در مرحله اول است.
-* **مقاصد تحت پوشش (۱۰ ولایت):** کابل، بامیان، بلخ، غزنی، غور (مناره جام)، هلمند (قلعه بست)، هرات، قندهار، نورستان و سمنگان (تخت رستم).
-* **خدمات مستقل (۵ سرویس):** خدمات ویزا، اقامتگاه‌ها، ترانسپورت، راهنماهای حرفه‌ای، امنیت و پشتیبانی سفر.
+## 🎯 Phase 1 — Requirement Analysis
+
+- **Project type:** A dynamic catalog and travel-request website (Catalog & Booking Request).
+- **Number of languages:** Bilingual (English / Dari), without requiring complex external packages.
+- **Development structure:** Team-based, with 6 final members.
+- **Golden system rule:** Submitting a form does not mean that a booking has been confirmed (`Submitting a Request ≠ Booking`). The system does not include an online payment gateway.
+- **Destinations covered (10 provinces):** Kabul, Bamyan, Balkh, Ghazni, Ghor (Minaret of Jam), Helmand (Qala-e-Bost), Herat, Kandahar, Nuristan, and Panjshir.
+- **Independent services (5 services):** Visa services, accommodation, transportation, professional guides, and travel security and support.
 
 ---
 
-## 🗺️ Phase 2 — Information Architecture (معماری اطلاعات)
+## 🗺️ Phase 2 — Information Architecture
 
-### ۱. ساختار منوی اصلی (Navbar Options)
-* **Home** (`/`)
-* **About Us** (`/about`)
-* **Services** (`/services` — صفحه جامع خدمات با چیدمان زیگزاگی)
-* **Destinations** (`/destinations` — آرشیو ۱۰ ولایت)
-* **Tours** (`/tours` — آرشیو پکیج‌های مسافرتی)
-* **Blog** (`/blog`)
-* **Contact Us** ➔ به صورت دکمه متمایز (CTA Button) در انتهای ناوبری.
+### 1. Main Navigation Structure (Navbar Options)
 
-### ۲. ساختار فوتر (Footer)
-* **Terms & Conditions** (قوانین و مقررات)
-* **Privacy Policy** (حریم خصوصی)
+- **Home** (`/`)
+- **About Us** (`/about`)
+- **Services** (`/services` — a comprehensive services page with a zigzag layout)
+- **Destinations** (`/destinations` — an archive of 10 provinces)
+- **Tours** (`/tours` — an archive of travel packages)
+- **Blog** (`/blog`)
+- **Contact Us** → Displayed as a distinctive CTA button at the end of the navigation.
 
-### ۳. منطق جریان کاربر (User Flow & Page Logic)
-* **Scroll Logic:** دکمه‌های هیرو در صفحه تور/خدمات، کاربر را به صورت نرم به سمت فرم درخواست در انتهای همان صفحه اسکرول می‌کنند (`Scroll to Request Form`).
-* **Payment Flow:** صفحه روش‌های پرداخت (`/payment-methods`) فاقد لینک مستقیم در هدر یا فوتر است و تنها در مرحله نهایی (پس از تایید قیمت توسط Amovi) از طریق دکمه اختصاصی فعال می‌شود.
+### 2. Footer Structure
 
----
+- **Terms & Conditions**
+- **Privacy Policy**
 
-## 🗄️ Phase 3 — Data Architecture (معماری داده‌ها)
-مدیریت داده‌ها کاملاً تفکیک‌شده و بر اساس ساختار سبک فرانت‌آند چیده شده است:
+### 3. User Flow & Page Logic
 
-1. **متون ثابت (Static Translations):** درون پوشه `src/locales/` در قالب دو فایل `en.json` و `fa.json` ذخیره می‌شوند.
-2. **دیتای داینامیک:** درون فایل `db.json` در روت پروژه (جهت استفاده در `json-server`) ذخیره می‌شود. تمام آبجکت‌های تورها، ولایات و خدمات به صورت همزمان دارای فیلدهای `en` و `fa` هستند.
+- **Scroll Logic:** Hero buttons on the tours and services pages smoothly scroll the user to the request form at the bottom of the same page.
+- **Payment Flow:** The payment methods page (`/payment-methods`) has no direct link in the header or footer. It is accessible only at the final stage after the request process, if required.
 
 ---
 
-## 🏗️ Phase 4 — Software Architecture (معماری نرم‌افزار)
-* **معماری لایه‌ای:** تفکیک کدها به ۳ لایه ظاهر (UI)، منطق و زبان (Zustand State)، و لایه سرویس (Axios API).
-* **استراتژی کامپوننت‌های یکپارچه:** از ساخت کامپوننت‌های ریز (دکمه، عکس یا متن جداگانه) برای جلوگیری از آشفتگی تسک‌ها خودداری می‌شود. هر بخش کلان سایت، یک کامپوننت جامع خواهد داشت (مانند `TourDetailsContainer.jsx`).
-* **وابستگی‌های مجاز پروژه:** `react-router-dom`, `axios`, `zustand`, `lucide-react`, `Tailwind CSS`.
+## 🗄️ Phase 3 — Data Architecture
+
+Data management is fully separated and organized according to a lightweight front-end structure:
+
+1. **Static translations:** Stored in the `src/locales/` directory in two files: `en.json` and `fa.json`.
+2. **Dynamic data:** Stored in the `db.json` file at the project root for use with `json-server`. All tour objects and other dynamic content are managed through this file.
 
 ---
 
-## 📂 Phase 5 — Project Architecture (ساختار پوشه‌ها)
-تیم فرانت‌آند موظف است ساختار پوشه‌ها را دقیقاً بر اساس این پترن Page-Driven در VS Code ایجاد کند:
+## 🏗️ Phase 4 — Software Architecture
+
+- **Layered architecture:** The code is separated into three layers: the presentation layer (UI), the logic and language layer (Zustand state), and the service layer (Axios API).
+- **Integrated component strategy:** Avoid creating overly small components for every individual button, image, or text element. Components should be grouped meaningfully to prevent unnecessary project complexity.
+- **Approved project dependencies:** `react-router-dom`, `axios`, `zustand`, `lucide-react`, and `Tailwind CSS`.
+
+---
+
+## 📂 Phase 5 — Project Architecture
+
+The front-end team must create the folder structure in VS Code exactly according to this Page-Driven pattern:
 
 ```text
 src/
-├── assets/          # تصاویر، لوگوها و فونت‌ها
-├── components/      # کامپوننت‌های عمومی (مانند MasterRequestForm)
-├── locales/         # فایل‌های en.json و fa.json
-├── store/           # استور Zustand (مدیریت زبان فعال سایت)
-├── services/        # فایل‌های ارتباط با json-server (Axios setup)
-├── routes/          # مدیریت مسیرهای سایت
-└── pages/           # پوشه صفحات بر اساس استراتژی مالکیت صفحه
-    ├── home/        # شامل Home.jsx و پوشه /components اختصاصی این صفحه
+├── assets/          # Images, logos, and fonts
+├── components/      # Shared components, such as MasterRequestForm
+├── locales/         # en.json and fa.json files
+├── store/           # Zustand store for managing the site's active language
+├── services/        # Files for communicating with json-server (Axios setup)
+├── routes/          # Site route management
+└── pages/           # Page folders based on the page-ownership strategy
+    ├── home/        # Includes Home.jsx and this page's dedicated /components folder
     ├── about/
     ├── services/
-    ├── layout/      # شامل Header.jsx و Footer.jsx
+    ├── layout/      # Includes Header.jsx and Footer.jsx
     ├── contact/
     ├── tours/
     ├── destinations/
@@ -76,34 +83,38 @@ src/
 
 ---
 
-## 👥 Phase 6 — Team Planning & WBS (برنامه‌ریزی تیمی)
-تقسیم کار بین ۶ عضو تیم بر اساس **مالکیت صفحه (Page-Based Ownership)** انجام می‌شود. هر برنامه‌نویس مسئول صفر تا صد فرانت و دیتای متناظر صفحه خود در `db.json` است:
+## 👥 Phase 6 — Team Planning & WBS
 
-* **عضو ۱ (مدیر/لیدر):** راه‌اندازی بیس پروژه، کانفیگ استور زبان Zustand، پوشه Layouts و مسیرها.
-* **عضو ۲:** توسعه کامپوننت مشترک و داینامیک `MasterRequestForm`.
-* **عضو ۳:** مالک پوشه صفحه اصلی (`home`) و صفحه تماس (`contact`).
-* **عضو ۴:** مالک پوشه مقاصد (`destinations`) جهت رندر ۱۰ ولایت.
-* **عضو ۵:** مالک پوشه تورها (`tours`) متصل به سیستم فیلترینگ ولایات.
-* **عضو ۶:** مالک پوشه خدمات جامع (`services`) با استایل زیگزاگی و پوشه وبلاگ (`blog`).
+The work is divided among 6 team members according to **Page-Based Ownership**. Each developer is responsible for their assigned page from start to finish.
 
-> 📌 **قانون اشتراک‌گذاری:** در صورت ساخت کامپوننت قابل‌استفاده توسط دیگران، برنامه‌نویس موظف است آن را به پوشه عمومی `components/` منتقل کرده و به تیم اطلاع دهد.
+- **Member 1 (Manager/Lead):** Set up the project foundation, configure the Zustand language store, and create the layout and routing structure.
+- **Member 2:** Develop the shared and dynamic `MasterRequestForm` component.
+- **Member 3:** Own the home page (`home`) and contact page (`contact`) folders.
+- **Member 4:** Own the destinations folder (`destinations`) for rendering the 10 provinces.
+- **Member 5:** Own the tours folder (`tours`), connected to the province-filtering system.
+- **Member 6:** Own the comprehensive services folder (`services`) with its zigzag styling, as well as the blog folder (`blog`).
 
----
-
-## 🌿 Phase 8 — Version Control Strategy (قوانین گیت‌هاب)
-* **شاخه‌های اصلی:** شاخه `main` (کد نهایی بدون باگ) و شاخه `develop` (شاخه ادغام توسعه).
-* **نام‌گذاری شاخه‌های فرعی:** ایجاد شاخه از روی develop با فرمت `feature/feature-name` یا `bugfix/issue-name`.
-* **قانون Pull Request (PR):** هر PR قبل از ادغام به develop باید حداقل توسط **۲ عضو دیگر تیم** بازبینی و تایید (Approve) شود.
+> 📌 **Sharing rule:** If a developer creates a component that can be reused by other team members, they must place it in the shared `src/components/` directory and inform the team before using it in other pages.
 
 ---
 
-## 🔒 Phase 10 — Security Planning (امنیت فرانت‌آند)
-* **اعتبارسنجی ورودی‌ها:** بررسی فرمت صحیح ایمیل با Regex، فیلتر شماره تماس‌ها و پاک‌سازی داده‌ها (Sanitization) جهت جلوگیری از حملات تزریق کد یا XSS.
-* **عدم ذخیره اطلاعات حساس:** اطلاعات شخصی و فرم‌های مسافران به هیچ وجه نباید در LocalStorage مرورگر ذخیره باقی بماند.
+## 🌿 Phase 8 — Version Control Strategy
+
+- **Main branches:** The `main` branch contains the final bug-free code, while the `develop` branch is used for development integration.
+- **Feature branch naming:** Create branches from `develop` using the format `feature/feature-name` or `bugfix/issue-name`.
+- **Pull Request (PR) rule:** Every PR must be reviewed and approved by at least **2 other team members** before it is merged into `develop`.
 
 ---
 
-## 🧪 Phase 11 — Testing Strategy (تضمین کیفیت)
-* **تست واحد (Unit Test):** تست استور زبان Zustand با ابزار **Vitest** جهت اطمینان از سوییچ درست متون و تغییر جهت صفحه (RTL/LTR).
-* **تست دستی (Manual Checklist):** بررسی عدم ارسال فرم با فیلدهای خالی، غیرفعال شدن دکمه ثبت در هنگام ارسال، و تست کامل ریسپانسیو قالب زیگزاگی خدمات و کارت‌های تور در موبایل و دسکتاپ.
-* **ثبت باگ‌ها:** تمام خطاهای فرانت‌آند باید در بخش **GitHub Issues** ثبت و به مالک آن صفحه ارجاع داده شوند.
+## 🔒 Phase 10 — Security Planning
+
+- **Input validation:** Verify valid email formats using Regex, filter phone numbers, and sanitize data to prevent malicious or invalid input.
+- **No sensitive-data storage:** Personal information and traveler form data must never be stored in the browser's LocalStorage.
+
+---
+
+## 🧪 Phase 11 — Testing Strategy
+
+- **Unit testing:** Test the Zustand language store with **Vitest** to ensure that text switching and page direction changes (RTL/LTR) work correctly.
+- **Manual checklist:** Verify that forms cannot be submitted with empty fields, the submit button is disabled while a request is being submitted, and the complete bilingual user flow works correctly.
+- **Bug reporting:** All front-end errors must be recorded in **GitHub Issues** and assigned to the owner of the relevant page.
