@@ -1,120 +1,187 @@
-# 🌍 Amovi Travel — Front-end Project Documentation
+# Amovi Travel — Front-End Application
 
-This document serves as the **Master Roadmap** and the primary software-engineering reference for developing the bilingual website of the **Amovi Travel** tourism agency.
+Amovi Travel is a bilingual travel website built with React and Vite. The application presents travel-related content and provides a structured inquiry form for users who want to request information about a package or service.
 
----
+> **Current status:** This repository contains the initial front-end implementation. Several pages and supporting features are scaffolded or partially implemented and should not be considered production-ready.
 
-## 🎯 Phase 1 — Requirement Analysis
+## Features
 
-- **Project type:** A dynamic catalog and travel-request website (Catalog & Booking Request).
-- **Number of languages:** Bilingual (English / Dari), without requiring complex external packages.
-- **Development structure:** Team-based, with 6 final members.
-- **Golden system rule:** Submitting a form does not mean that a booking has been confirmed (`Submitting a Request ≠ Booking`). The system does not include an online payment gateway.
-- **Destinations covered (10 provinces):** Kabul, Bamyan, Balkh, Ghazni, Ghor (Minaret of Jam), Helmand (Qala-e-Bost), Herat, Kandahar, Nuristan, and Panjshir.
-- **Independent services (5 services):** Visa services, accommodation, transportation, professional guides, and travel security and support.
+The current application includes:
 
----
+- React-based single-page application architecture
+- English and Dari language support
+- Automatic LTR/RTL direction switching
+- Client-side routing with React Router
+- Shared travel request form
+- Separate public layout and admin route
+- Tailwind CSS styling
+- Zustand-based language state management
 
-## 🗺️ Phase 2 — Information Architecture
+The request form collects the following information:
 
-### 1. Main Navigation Structure (Navbar Options)
+- Full name
+- Email address
+- WhatsApp/phone number
+- Preferred travel date
+- Number of travelers
+- Selected package or service
+- Additional requirements
+- Privacy-policy consent
 
-- **Home** (`/`)
-- **About Us** (`/about`)
-- **Services** (`/services` — a comprehensive services page with a zigzag layout)
-- **Destinations** (`/destinations` — an archive of 10 provinces)
-- **Tours** (`/tours` — an archive of travel packages)
-- **Blog** (`/blog`)
-- **Contact Us** → Displayed as a distinctive CTA button at the end of the navigation.
+Submitting the form currently displays a confirmation message and logs the form data. Backend persistence and request processing are not yet implemented.
 
-### 2. Footer Structure
+## Technology Stack
 
-- **Terms & Conditions**
-- **Privacy Policy**
+### Runtime Dependencies
 
-### 3. User Flow & Page Logic
+- React
+- React DOM
+- React Router DOM
+- Zustand
+- Axios
+- Lucide React
 
-- **Scroll Logic:** Hero buttons on the tours and services pages smoothly scroll the user to the request form at the bottom of the same page.
-- **Payment Flow:** The payment methods page (`/payment-methods`) has no direct link in the header or footer. It is accessible only at the final stage after the request process, if required.
+### Development Tools
 
----
+- Vite
+- Tailwind CSS
+- PostCSS
+- ESLint
 
-## 🗄️ Phase 3 — Data Architecture
-
-Data management is fully separated and organized according to a lightweight front-end structure:
-
-1. **Static translations:** Stored in the `src/locales/` directory in two files: `en.json` and `fa.json`.
-2. **Dynamic data:** Stored in the `db.json` file at the project root for use with `json-server`. All tour objects and other dynamic content are managed through this file.
-
----
-
-## 🏗️ Phase 4 — Software Architecture
-
-- **Layered architecture:** The code is separated into three layers: the presentation layer (UI), the logic and language layer (Zustand state), and the service layer (Axios API).
-- **Integrated component strategy:** Avoid creating overly small components for every individual button, image, or text element. Components should be grouped meaningfully to prevent unnecessary project complexity.
-- **Approved project dependencies:** `react-router-dom`, `axios`, `zustand`, `lucide-react`, and `Tailwind CSS`.
-
----
-
-## 📂 Phase 5 — Project Architecture
-
-The front-end team must create the folder structure in VS Code exactly according to this Page-Driven pattern:
+## Project Structure
 
 ```text
-src/
-├── assets/          # Images, logos, and fonts
-├── components/      # Shared components, such as MasterRequestForm
-├── locales/         # en.json and fa.json files
-├── store/           # Zustand store for managing the site's active language
-├── services/        # Files for communicating with json-server (Axios setup)
-├── routes/          # Site route management
-└── pages/           # Page folders based on the page-ownership strategy
-    ├── home/        # Includes Home.jsx and this page's dedicated /components folder
-    ├── about/
-    ├── services/
-    ├── layout/      # Includes Header.jsx and Footer.jsx
-    ├── contact/
-    ├── tours/
-    ├── destinations/
-    ├── policy/
-    ├── blog/
-    └── payment/
+.
+├── public/
+├── src/
+│   ├── components/
+│   │   └── MasterRequestForm.jsx
+│   ├── locales/
+│   │   ├── en.json
+│   │   └── fa.json
+│   ├── pages/
+│   │   ├── about/
+│   │   ├── admin/
+│   │   ├── blog/
+│   │   ├── contact/
+│   │   ├── destinations/
+│   │   ├── home/
+│   │   ├── layout/
+│   │   ├── payment/
+│   │   ├── policy/
+│   │   ├── services/
+│   │   └── tours/
+│   ├── services/
+│   ├── store/
+│   │   └── useLangStore.js
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── postcss.config.js
+└── vite.config.js
 ```
 
----
+## Application Routes
 
-## 👥 Phase 6 — Team Planning & WBS
+The application currently defines the following routes:
 
-The work is divided among 6 team members according to **Page-Based Ownership**. Each developer is responsible for their assigned page from start to finish.
+| Route | Purpose |
+|---|---|
+| `/` | Home page |
+| `/about` | About page |
+| `/services` | Services page |
+| `/destinations` | Destinations page |
+| `/tours` | Tours page |
+| `/blog` | Blog page |
+| `/contact` | Contact page |
+| `/policy` | Policy page |
+| `/payment-methods` | Payment methods page |
+| `/admin` | Independent admin page without the public layout |
 
-- **Member 1 (Manager/Lead):** Set up the project foundation, configure the Zustand language store, and create the layout and routing structure.
-- **Member 2:** Develop the shared and dynamic `MasterRequestForm` component.
-- **Member 3:** Own the home page (`home`) and contact page (`contact`) folders.
-- **Member 4:** Own the destinations folder (`destinations`) for rendering the 10 provinces.
-- **Member 5:** Own the tours folder (`tours`), connected to the province-filtering system.
-- **Member 6:** Own the comprehensive services folder (`services`) with its zigzag styling, as well as the blog folder (`blog`).
+The public routes are rendered inside the main layout. The admin route is rendered separately without the public header and footer.
 
-> 📌 **Sharing rule:** If a developer creates a component that can be reused by other team members, they must place it in the shared `src/components/` directory and inform the team before using it in other pages.
+## Internationalization
 
----
+Language state is managed by `src/store/useLangStore.js`.
 
-## 🌿 Phase 8 — Version Control Strategy
+- The default language is English (`en`).
+- Dari is represented by the `fa` locale.
+- English uses left-to-right (`ltr`) layout direction.
+- Dari uses right-to-left (`rtl`) layout direction.
+- Translation files are stored in `src/locales/en.json` and `src/locales/fa.json`.
 
-- **Main branches:** The `main` branch contains the final bug-free code, while the `develop` branch is used for development integration.
-- **Feature branch naming:** Create branches from `develop` using the format `feature/feature-name` or `bugfix/issue-name`.
-- **Pull Request (PR) rule:** Every PR must be reviewed and approved by at least **2 other team members** before it is merged into `develop`.
+The translation dictionaries are currently limited and should be expanded as additional interface content is implemented.
 
----
+## Local Development
 
-## 🔒 Phase 10 — Security Planning
+### Requirements
 
-- **Input validation:** Verify valid email formats using Regex, filter phone numbers, and sanitize data to prevent malicious or invalid input.
-- **No sensitive-data storage:** Personal information and traveler form data must never be stored in the browser's LocalStorage.
+- Node.js
+- npm
 
----
+### Installation
 
-## 🧪 Phase 11 — Testing Strategy
+```bash
+npm install
+```
 
-- **Unit testing:** Test the Zustand language store with **Vitest** to ensure that text switching and page direction changes (RTL/LTR) work correctly.
-- **Manual checklist:** Verify that forms cannot be submitted with empty fields, the submit button is disabled while a request is being submitted, and the complete bilingual user flow works correctly.
-- **Bug reporting:** All front-end errors must be recorded in **GitHub Issues** and assigned to the owner of the relevant page.
+### Start the development server
+
+```bash
+npm run dev
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview the production build
+
+```bash
+npm run preview
+```
+
+### Run linting
+
+```bash
+npm run lint
+```
+
+## Data and Backend Status
+
+The repository does not currently contain a configured backend, `db.json` file, or implemented API endpoint. Although Axios is included as a dependency and the `src/services/` directory is reserved for service logic, request data is not currently persisted to a server.
+
+The request form currently uses a client-side submission handler. A future backend integration should replace the console logging behavior with a validated API request and an appropriate loading, success, and error state.
+
+## Current Limitations
+
+The following items are not fully implemented or cannot be verified from the current repository structure:
+
+- Backend request storage and API integration
+- Authentication and authorization for the admin route
+- Complete translation coverage
+- Automated tests
+- Production payment processing
+- Production-grade form validation and error handling
+- Complete content for all planned pages
+- Persistent storage for submitted user information
+
+These limitations should be addressed before deploying the application as a production booking or inquiry platform.
+
+## Development Guidelines
+
+- Keep shared, reusable components in `src/components/`.
+- Keep page-specific components inside their corresponding page directory.
+- Keep translation text in the locale files instead of hard-coding repeated interface text.
+- Do not store personal or travel-request information in browser `localStorage`.
+- Validate and sanitize all user input before sending it to a backend service.
+- Do not describe a submitted inquiry as a confirmed booking unless a future backend workflow explicitly confirms it.
+
+## Project Scope
+
+The project is currently focused on the front-end presentation layer and the initial travel inquiry experience. Destination catalogs, tour packages, service content, payment workflows, administrative functionality, and backend processing should be documented and implemented only when they are supported by the repository code.
