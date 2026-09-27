@@ -1,6 +1,16 @@
 {
   "home": "Home",
+  "about": "About Us",
+  "services": "Services",
+  "destinations": "Destinations",
+  "tours": "Tours",
+  "blog": "Blog",
   "contact": "Contact Us",
+  "submitBtn": "Submit Request",
   "fullName": "Full Name",
-  "submitBtn": "Submit Request"
+  "email": "Email Address",
+  "phone": "Phone / WhatsApp",
+  "travelDate": "Preferred Travel Date",
+  "travelers": "Number of Travelers",
+  "packageField": "Package / Service Name"
 }
