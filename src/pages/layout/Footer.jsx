@@ -23,15 +23,15 @@ function Footer() {
   return (
     <footer className="bg-[#14213D] text-white border-t border-white/10 font-sans">
       {/* ================================================================
-          MAIN FOOTER
+          MAIN FOOTER (تنظیم گرید هوشمند چندستونه برای موبایل و دسکتاپ)
       ================================================================= */}
-      <div className="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-10">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.2fr_1fr] lg:gap-8 xl:gap-14">
+      <div className="mx-auto max-w-[1440px] px-4 py-10 sm:px-8 lg:px-10">
+        <div className="grid gap-8 grid-cols-2 md:grid-cols-2 lg:grid-cols-[1.3fr_1fr_1.2fr_1fr] lg:gap-8 xl:gap-14">
           
           {/* ============================================================
-              COLUMN 1 — AGENCY & SOCIALS
+              COLUMN 1 — AGENCY & SOCIALS (در موبایل کل عرض ۲ ستون را می‌گیرد)
           ============================================================= */}
-          <div>
+          <div className="col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-2.5">
               <img 
                 src={amoviLogo} 
@@ -47,12 +47,12 @@ function Footer() {
                 </span>
               </div>
             </Link>
-            <p className="mt-4 max-w-sm text-[13px] leading-7 text-slate-300 font-light">
+            <p className="mt-3 max-w-sm text-[13px] leading-6 text-slate-300 font-light">
               Amovi Travel: Explore Afghanistan through meaningful journeys, remarkable destinations, and carefully crafted travel experiences.
             </p>
             
-            {/* 🌐 آیکون‌های شبکه‌های اجتماعی به صورت دایره‌های ظریف طلایی تمپلت */}
-            <div className="mt-5 flex items-center gap-3">
+            {/* آیکون‌های شبکه‌های اجتماعی */}
+            <div className="mt-4 flex items-center gap-3">
               {['facebook', 'instagram', 'linkedin'].map((social) => (
                 <a
                   key={social}
@@ -71,13 +71,13 @@ function Footer() {
           </div>
 
           {/* ============================================================
-              COLUMN 2 — QUICK LINKS
+              COLUMN 2 — QUICK LINKS (در موبایل سمت چپ/راست گرید قرار می‌گیرد)
           ============================================================= */}
-          <div>
-            <h3 className="text-[15px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
+          <div className="col-span-1">
+            <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               Quick Links
             </h3>
-            <nav className="mt-4 flex flex-col gap-3">
+            <nav className="mt-3 flex flex-col gap-2.5">
               {quickLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -91,50 +91,47 @@ function Footer() {
           </div>
 
           {/* ============================================================
-              COLUMN 3 — CONTACT US (ادغام دقیق آیکون و لینک متناسب با تمپلت)
+              COLUMN 3 — CONTACT US
           ============================================================= */}
-          <div>
-            <h3 className="text-[15px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
+          <div className="col-span-1">
+            <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               Contact Us
             </h3>
-            <nav className="mt-4 flex flex-col gap-4">
-              {/* لینک هوشمند ایمیل با هاور همزمان آیکون و متن */}
+            <nav className="mt-3 flex flex-col gap-3.5">
               <a 
                 href="mailto:info@amovitravel.com" 
-                className="inline-flex items-center gap-2.5 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
+                className="inline-flex items-center gap-2 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
               >
-                <Mail size={15} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 mt-0.5" />
-                <span>info@amovitravel.com</span>
+                <Mail size={14} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 shrink-0" />
+                <span className="truncate max-w-[130px] sm:max-w-none">info@amovi.com</span>
               </a>
 
-              {/* لینک هوشمند تلفن و واتس‌اپ */}
               <a 
                 href="tel:+93700000000" 
-                className="inline-flex items-center gap-2.5 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
+                className="inline-flex items-center gap-2 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
                 dir="ltr"
               >
-                <Phone size={15} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 mt-0.5" />
-                <span>+93 700 000 000</span>
+                <Phone size={14} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 shrink-0" />
+                <span>+93 700 000</span>
               </a>
 
-              {/* لینک هوشمند آدرس دفتر کابل */}
               <div 
-                className="inline-flex items-center gap-2.5 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
+                className="inline-flex items-center gap-2 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[var(--color-amovi-gold)] font-medium group cursor-pointer w-fit"
               >
-                <MapPin size={15} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 mt-0.5" />
-                <span>Kabul, Afghanistan</span>
+                <MapPin size={14} strokeWidth={2.2} className="text-slate-400 group-hover:text-[var(--color-amovi-gold)] transition-colors duration-200 shrink-0" />
+                <span>Kabul, Afg</span>
               </div>
             </nav>
           </div>
 
           {/* ============================================================
-              COLUMN 4 — LEGAL
+              COLUMN 4 — LEGAL (در موبایل به زیبایی موازنه می‌شود)
           ============================================================= */}
-          <div>
-            <h3 className="text-[15px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
+          <div className="col-span-1">
+            <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               Legal
             </h3>
-            <nav className="mt-4 flex flex-col gap-3">
+            <nav className="mt-3 flex flex-col gap-2.5">
               {legalLinks.map((link) => (
                 <Link
                   key={link.name}
@@ -154,8 +151,8 @@ function Footer() {
           COPYRIGHT BAR
       ================================================================= */}
       <div className="border-t border-white/5 bg-black">
-        <div className="mx-auto flex min-h-12 max-w-[1440px] items-center justify-center px-5 text-center sm:px-8 lg:px-10">
-          <p className="text-[12px] text-slate-400 font-light">
+        <div className="mx-auto flex min-h-12 max-w-[1440px] items-center justify-center px-4 text-center">
+          <p className="text-[11px] text-slate-400 font-light">
             © {new Date().getFullYear()} Amovi Travel. All Rights Reserved.
           </p>
         </div>
