@@ -1,0 +1,283 @@
+{
+"users": [
+{
+"id": "user-001",
+"fullName": {
+"fa": "مدیر سیستم",
+"en": "Admin User"
+},
+"email": "[admin@amovi-travel.com](mailto:admin@amovi-travel.com)",
+"phoneWhatsApp": "+93700000000",
+"role": "admin",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"destinations": [
+{
+"id": "destination-001",
+"slug": "kabul",
+"fa": {
+"name": "کابل",
+"country": "افغانستان",
+"description": "پایتخت افغانستان را کشف کنید."
+},
+"en": {
+"name": "Kabul",
+"country": "Afghanistan",
+"description": "Explore the capital city of Afghanistan."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "destination-002",
+"slug": "bamyan",
+"fa": {
+"name": "بامیان",
+"country": "افغانستان",
+"description": "میراث طبیعی و فرهنگی بامیان را کشف کنید."
+},
+"en": {
+"name": "Bamyan",
+"country": "Afghanistan",
+"description": "Discover the natural and cultural heritage of Bamyan."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "destination-003",
+"slug": "herat",
+"fa": {
+"name": "هرات",
+"country": "افغانستان",
+"description": "شهر تاریخی هرات و میراث فرهنگی آن را کشف کنید."
+},
+"en": {
+"name": "Herat",
+"country": "Afghanistan",
+"description": "Discover the historic city of Herat and its cultural heritage."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"tours": [
+{
+"id": "tour-001",
+"slug": "discover-afghanistan",
+"fa": {
+"title": "کشف افغانستان",
+"description": "یک تجربه سفری اختصاصی در سراسر افغانستان."
+},
+"en": {
+"title": "Discover Afghanistan",
+"description": "A customized travel experience across Afghanistan."
+},
+"destinationIds": [
+"destination-001",
+"destination-002",
+"destination-003"
+],
+"durationDays": 7,
+"price": 0,
+"currency": "USD",
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "tour-002",
+"slug": "bamyan-cultural-tour",
+"fa": {
+"title": "تور فرهنگی بامیان",
+"description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید."
+},
+"en": {
+"title": "Bamyan Cultural Tour",
+"description": "Explore the cultural and natural attractions of Bamyan."
+},
+"destinationIds": [
+"destination-002"
+],
+"durationDays": 3,
+"price": 0,
+"currency": "USD",
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"services": [
+{
+"id": "service-001",
+"slug": "tour-planning",
+"fa": {
+"title": "برنامه‌ریزی تور",
+"description": "برنامه‌ریزی سفری اختصاصی برای افراد و گروه‌ها."
+},
+"en": {
+"title": "Tour Planning",
+"description": "Customized travel planning for individuals and groups."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "service-002",
+"slug": "transportation",
+"fa": {
+"title": "خدمات ترانسپورت",
+"description": "تنظیم خدمات ترانسپورت برای سفر شما."
+},
+"en": {
+"title": "Transportation",
+"description": "Travel transportation arrangements for your journey."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "service-003",
+"slug": "travel-assistance",
+"fa": {
+"title": "پشتیبانی سفر",
+"description": "پشتیبانی و همراهی در طول سفر شما."
+},
+"en": {
+"title": "Travel Assistance",
+"description": "Travel support and assistance during your trip."
+},
+"image": "",
+"isActive": true,
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"blogPosts": [
+{
+"id": "post-001",
+"slug": "exploring-afghanistan",
+"fa": {
+"title": "کشف افغانستان",
+"excerpt": "با زیبایی‌ها، فرهنگ و تاریخ افغانستان آشنا شوید.",
+"content": "محتوای مقاله در این بخش قرار خواهد گرفت.",
+"author": "اموی تراول"
+},
+"en": {
+"title": "Exploring Afghanistan",
+"excerpt": "Discover the beauty, culture and history of Afghanistan.",
+"content": "Blog content will be added here.",
+"author": "Amovi Travel"
+},
+"image": "",
+"isPublished": true,
+"publishedAt": "2026-09-28T08:00:00Z",
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"masterRequests": [
+{
+"id": "request-001",
+"fullName": "Test Customer",
+"email": "[customer@example.com](mailto:customer@example.com)",
+"phoneWhatsApp": "+93700000001",
+"preferredDate": "2026-10-15",
+"travelersCount": 2,
+"packageOrService": {
+"fa": "تور فرهنگی بامیان",
+"en": "Bamyan Cultural Tour"
+},
+"additionalRequirements": {
+"fa": "",
+"en": ""
+},
+"privacyConsent": true,
+"status": "pending",
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"testimonials": [
+{
+"id": "testimonial-001",
+"fa": {
+"name": "سارا جانسون",
+"country": "بریتانیا",
+"message": "سفر ما به شکل بسیار خوبی سازماندهی شده بود و تیم در تمام طول سفر بسیار همکاری و کمک کرد."
+},
+"en": {
+"name": "Sarah Johnson",
+"country": "United Kingdom",
+"message": "Our trip was beautifully organized and the team was very helpful throughout the journey."
+},
+"rating": 5,
+"image": "",
+"isPublished": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "testimonial-002",
+"fa": {
+"name": "محمد علی",
+"country": "امارات متحده عربی",
+"message": "یک تجربه عالی از سفر با پشتیبانی حرفه‌ای و ارتباطات بسیار خوب."
+},
+"en": {
+"name": "Mohammad Ali",
+"country": "United Arab Emirates",
+"message": "A great travel experience with professional support and excellent communication."
+},
+"rating": 5,
+"image": "",
+"isPublished": true,
+"createdAt": "2026-09-28T08:00:00Z"
+},
+{
+"id": "testimonial-003",
+"fa": {
+"name": "اما ویلسون",
+"country": "کانادا",
+"message": "برنامه سفر به خوبی تنظیم شده بود و این تجربه برای من خاطره‌انگیز بود."
+},
+"en": {
+"name": "Emma Wilson",
+"country": "Canada",
+"message": "The itinerary was well planned and the experience was memorable."
+},
+"rating": 4,
+"image": "",
+"isPublished": true,
+"createdAt": "2026-09-28T08:00:00Z"
+}
+],
+
+"contactMessages": [
+{
+"id": "message-001",
+"fullName": "Test Visitor",
+"email": "[visitor@example.com](mailto:visitor@example.com)",
+"phone": "+93700000002",
+"subject": {
+"fa": "سوال عمومی",
+"en": "General Inquiry"
+},
+"message": {
+"fa": "این یک پیام آزمایشی برای بخش تماس است.",
+"en": "This is a test contact message."
+},
+"status": "unread",
+"createdAt": "2026-09-28T08:00:00Z"
+}
+]
+}
