@@ -88,12 +88,13 @@ export default function Hero({ currentLang }) {
           </div>
         </div>
 
-        {/* ۴. بخش کلاژ تصاویر دایره‌ای - کاملاً دست‌نخورده و بدون تغییر در پوزیشن و ابعاد */}
-        <div className="lg:col-span-6 flex justify-end items-center relative min-h-[580px] -mt-10">
-          <div className="relative w-[550px] h-[550px] mr-0">
+        {/* 🔴 ۴. بخش کلاژ تصاویر دایره‌ای - کاملاً ریسپانسیو شده برای تبلت و موبایل بدون دستکاری تنظیمات و تداخل دسکتاپ شما */}
+        <div className="lg:col-span-6 flex justify-center lg:justify-end items-center relative min-h-[380px] sm:min-h-[500px] lg:min-h-[580px] -mt-10">
+          {/* کانتینر اصلی کلاژ دارای ابعاد متغیر بر اساس اندازه صفحه است */}
+          <div className="relative w-[300px] h-[300px] sm:w-[440px] sm:h-[440px] lg:w-[550px] lg:h-[550px] mr-0">
             
             {/* دایره بزرگ پایه در بالا */}
-            <div className="absolute w-[380px] h-[380px] rounded-full border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-10 top-6 right-8 hover:scale-105 transition-transform duration-500">
+            <div className="absolute w-[210px] h-[210px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-10 top-6 right-4 sm:right-8 hover:scale-105 transition-transform duration-500">
               <img 
                 src={heroMain} 
                 alt="Main Luxury View" 
@@ -102,7 +103,7 @@ export default function Hero({ currentLang }) {
             </div>
 
             {/* دایره متوسط سمت چپ */}
-            <div className="absolute w-[270px] h-[270px] rounded-full border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-20 bottom-0 left-6 hover:scale-105 transition-transform duration-500">
+            <div className="absolute w-[150px] h-[150px] sm:w-[215px] sm:h-[215px] lg:w-[270px] lg:h-[270px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-20 bottom-0 left-2 sm:left-6 hover:scale-105 transition-transform duration-500">
               <img 
                 src={heroTop} 
                 alt="Top Experience" 
@@ -111,7 +112,7 @@ export default function Hero({ currentLang }) {
             </div>
 
             {/* دایره کوچک سمت راست بالا */}
-            <div className="absolute w-[210px] h-[210px] rounded-full border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-30 bottom-16 -right-12 hover:scale-105 transition-transform duration-500">
+            <div className="absolute w-[115px] h-[115px] sm:w-[165px] sm:h-[165px] lg:w-[210px] lg:h-[210px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-30 bottom-10 sm:bottom-16 -right-4 sm:-right-8 lg:-right-12 hover:scale-105 transition-transform duration-500">
               <img 
                 src={heroBottom} 
                 alt="Bottom Experience" 
