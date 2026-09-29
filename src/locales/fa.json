@@ -1,16 +1,28 @@
 {
-  "home": "صفحه اصلی",
-  "about": "درباره ما",
-  "services": "خدمات",
-  "destinations": "مقاصد",
-  "tours": "تورها",
-  "blog": "وبلاگ",
-  "contact": "تماس با ما",
-  "submitBtn": "ثبت درخواست سفر",
-  "fullName": "نام کامل",
-  "email": "آدرس ایمیل",
-  "phone": "شماره تماس / واتس‌اپ",
-  "travelDate": "تاریخ موردنظر سفر",
-  "travelers": "تعداد مسافران",
-  "packageField": "نام پکیج یا خدمت"
+  "nav": {
+    "home": "صفحه اصلی",
+    "about": "درباره ما",
+    "services": "خدمات",
+    "destinations": "مقاصد",
+    "tours": "تورها",
+    "blog": "وبلاگ",
+    "contact": "تماس با ما",
+    "policy": "حریم خصوصی"
+  },
+  "form": {
+    "fullName": "نام کامل",
+    "email": "آدرس ایمیل",
+    "phone": "شماره تماس / واتس‌اپ",
+    "travelDate": "تاریخ موردنظر سفر",
+    "travelers": "تعداد مسافران",
+    "packageField": "نام پکیج یا خدمت",
+    "requirements": "نیازمندی‌های اضافی",
+    "privacyConsent": "من قوانین و سیاست حریم خصوصی را می‌پذیرم",
+    "submitBtn": "ثبت درخواست سفر"
+  },
+  "common": {
+    "readMore": "بیشتر بخوانید",
+    "loading": "در حال بارگذاری...",
+    "successMessage": "درخواست شما با موفقیت ثبت شد!"
+  }
 }
