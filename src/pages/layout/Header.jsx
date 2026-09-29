@@ -14,7 +14,10 @@ function Header() {
     { name: translations.home || "Home", path: "/" },
     { name: translations.about || "About Us", path: "/about" },
     { name: translations.services || "Services", path: "/services" },
-    { name: translations.destinations || "Destinations", path: "/destinations" },
+    {
+      name: translations.destinations || "Destinations",
+      path: "/destinations",
+    },
     { name: translations.tours || "Tours", path: "/tours" },
     { name: translations.blog || "Blog", path: "/blog" },
   ];
@@ -26,12 +29,15 @@ function Header() {
   return (
     <header className="sticky top-4 z-50 w-[96%] max-w-[1600px] mx-auto border border-white/30 bg-white/30 backdrop-blur-2xl text-[var(--color-amovi-navy)] rounded-2xl shadow-xl transition-all duration-300">
       <div className="flex h-16 sm:h-20 w-full items-center justify-between px-4 sm:px-8">
-        
         {/* ========================================== BRAND & LOGO ========================================== */}
-        <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
-          <img 
-            src={amoviLogo} 
-            alt="Amovi Travel Logo" 
+        <Link
+          to="/"
+          onClick={() => setMobileMenuOpen(false)}
+          className="flex items-center gap-1.5 sm:gap-2.5 shrink-0"
+        >
+          <img
+            src={amoviLogo}
+            alt="Amovi Travel Logo"
             className="h-8 sm:h-12 w-auto object-contain rounded-xl border border-white/20 shadow-sm"
           />
           <div>
@@ -50,11 +56,15 @@ function Header() {
             <NavLink
               key={item.name}
               to={item.path}
-              className={({ isActive }) => [
-                "relative py-2 text-[14px] font-semibold tracking-wide transition-colors duration-200",
-                "after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:bg-[var(--color-amovi-gold)] after:transition-all after:duration-200",
-                isActive ? "text-[var(--color-amovi-gold)] after:w-full" : "text-[var(--color-amovi-navy)] hover:text-[var(--color-amovi-gold)] after:w-0",
-              ].join(" ")}
+              className={({ isActive }) =>
+                [
+                  "relative py-2 text-[14px] font-semibold tracking-wide transition-colors duration-200",
+                  "after:absolute after:bottom-0 after:left-0 after:h-[2px] after:rounded-full after:bg-[var(--color-amovi-gold)] after:transition-all after:duration-200",
+                  isActive
+                    ? "text-[var(--color-amovi-gold)] after:w-full"
+                    : "text-[var(--color-amovi-navy)] hover:text-[var(--color-amovi-gold)] after:w-0",
+                ].join(" ")
+              }
             >
               {item.name}
             </NavLink>
@@ -69,10 +79,32 @@ function Header() {
             onClick={handleLanguageToggle}
             className="flex h-8 sm:h-10 items-center gap-1 rounded-full border border-slate-200 bg-white px-2 sm:px-4 text-[10px] sm:text-xs font-bold text-[var(--color-amovi-navy)] shadow-md hover:border-[var(--color-amovi-gold)] transition duration-200 cursor-pointer"
           >
-            <Globe size={12} className="text-[var(--color-amovi-navy)] opacity-90 shrink-0" strokeWidth={2} />
-            <span className={currentLang === "en" ? "text-[var(--color-amovi-gold)]" : "text-slate-500"}>EN</span>
-            <span className="text-[var(--color-amovi-navy)] font-extrabold text-sm mx-0.5 select-none">/</span>
-            <span className={currentLang === "fa" ? "text-[var(--color-amovi-gold)]" : "text-slate-500"}>دری</span>
+            <Globe
+              size={12}
+              className="text-[var(--color-amovi-navy)] opacity-90 shrink-0"
+              strokeWidth={2}
+            />
+            <span
+              className={
+                currentLang === "en"
+                  ? "text-[var(--color-amovi-gold)]"
+                  : "text-slate-500"
+              }
+            >
+              EN
+            </span>
+            <span className="text-[var(--color-amovi-navy)] font-extrabold text-sm mx-0.5 select-none">
+              /
+            </span>
+            <span
+              className={
+                currentLang === "fa"
+                  ? "text-[var(--color-amovi-gold)]"
+                  : "text-slate-500"
+              }
+            >
+              دری
+            </span>
           </button>
 
           {/* دکمه دسکتاپ تماس با ما */}
@@ -96,7 +128,9 @@ function Header() {
       </div>
 
       {/* ========================================== MOBILE DROPDOWN MENU ========================================== */}
-      <div className={`overflow-hidden bg-white/95 rounded-b-2xl border-t border-slate-100 lg:hidden transition-all duration-300 ${mobileMenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}>
+      <div
+        className={`overflow-hidden bg-white/95 rounded-b-2xl border-t border-slate-100 lg:hidden transition-all duration-300 ${mobileMenuOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"}`}
+      >
         <div className="px-6 pb-6 pt-2">
           <nav className="flex flex-col">
             {navigation.map((item) => (
@@ -104,19 +138,23 @@ function Header() {
                 key={item.name}
                 to={item.path}
                 onClick={() => setMobileMenuOpen(false)}
-                className={({ isActive }) => [
-                  "border-b border-slate-100 py-3.5 text-[15px] font-semibold transition-colors duration-200",
-                  isActive ? "text-[var(--color-amovi-gold)]" : "text-[var(--color-amovi-navy)] hover:text-[var(--color-amovi-gold)]",
-                ].join(" ")}
+                className={({ isActive }) =>
+                  [
+                    "border-b border-slate-100 py-3.5 text-[15px] font-semibold transition-colors duration-200",
+                    isActive
+                      ? "text-[var(--color-amovi-gold)]"
+                      : "text-[var(--color-amovi-navy)] hover:text-[var(--color-amovi-gold)]",
+                  ].join(" ")
+                }
               >
                 {item.name}
               </NavLink>
             ))}
           </nav>
           <div className="mt-4">
-            <Link 
-              to="/contact" 
-              onClick={() => setMobileMenuOpen(false)} 
+            <Link
+              to="/contact"
+              onClick={() => setMobileMenuOpen(false)}
               className="flex h-12 items-center justify-center gap-2 rounded-full bg-[var(--color-amovi-gold)] text-[var(--color-amovi-navy)] font-bold w-full text-center shadow-md"
             >
               <span>{translations.contact || "Contact Us"}</span>
