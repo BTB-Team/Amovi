@@ -29,12 +29,12 @@ function Footer() {
       dir={isRtl ? "rtl" : "ltr"}
     >
       {/* کانتینر اصلی محتوای فوتر با عرض استاندارد پروژه */}
-      <div className="mx-auto max-w-[1440px] px-4 xs:px-6 py-12 md:py-14 sm:px-8 lg:px-10">
+      <div className="mx-auto max-w-[1440px] px-3 xs:px-6 py-12 md:py-14 sm:px-8 lg:px-10">
         
-        {/* 🔴 گرید هوشمند مچ‌شده با عکس: در موبایل ۲ ستونه و از تبلت (md) به بالا کاملاً ۴ ستونه دسکتاپ می‌شود */}
-        <div className="grid gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-[1.5fr_1fr_1.2fr_1fr] lg:gap-8 xl:gap-14">
+        {/* گرید هوشمند مچ‌شده با عکس: در موبایل ۲ ستونه با فاصله‌های افقی بهینه شده برای ۳۲۵ پیکسل */}
+        <div className="grid gap-y-8 gap-x-3 xs:gap-8 grid-cols-2 md:grid-cols-4 lg:grid-cols-[1.5fr_1fr_1.2fr_1fr] lg:gap-8 xl:gap-14">
           
-          {/* ستون اول: معرفی آژانس و شبکه‌های اجتماعی (در موبایل کل عرض ۲ ستون را می‌گیرد) */}
+          {/* ستون اول: معرفی آژانس و شبکه‌های اجتماعی */}
           <div className="col-span-2 md:col-span-1 flex flex-col items-start">
             <Link to="/" className={`flex items-center gap-2.5 ${isRtl ? 'flex-row-reverse text-right md:flex-row md:text-left' : ''}`}>
               <img 
@@ -78,8 +78,8 @@ function Footer() {
             </div>
           </div>
 
-          {/* ستون دوم: لینک‌های سریع (در موبایل ۱ ستون از ۲ ستون را می‌گیرد) */}
-          <div className="col-span-1 md:col-span-1 flex flex-col items-start">
+          {/* ستون دوم: لینک‌های سریع */}
+          <div className="col-span-1 flex flex-col items-start">
             <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               {isRtl ? "دسترسی سریع" : "Quick Links"}
             </h3>
@@ -96,18 +96,18 @@ function Footer() {
             </nav>
           </div>
 
-          {/* ستون سوم: اطلاعات ارتباطی (در موبایل ۱ ستون از ۲ ستون را در کنار کوئیک‌لینک می‌گیرد) */}
-          <div className="col-span-1 md:col-span-1 flex flex-col items-start">
+          {/* ستون سوم: اطلاعات ارتباطی مجهز به تراز متراکم در ۳۲۵ پیکسل */}
+          <div className="col-span-1 flex flex-col items-start">
             <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               {isRtl ? "ارتباط با ما" : "Contact Us"}
             </h3>
-            <nav className="mt-4 flex flex-col gap-3.5">
+            <nav className="mt-4 flex flex-col gap-3.5 w-full overflow-hidden">
               <a 
                 href="mailto:info@amovitravel.com" 
                 className={`inline-flex items-center gap-2 text-[13px] text-slate-300 transition-colors duration-200 hover:text-[#FCA311] font-medium group cursor-pointer w-fit ${isRtl ? 'flex-row-reverse' : ''}`}
               >
                 <Mail size={14} className="text-slate-400 group-hover:text-[#FCA311] shrink-0" />
-                <span className="font-[Inter] text-xs xs:text-sm">info@amovitravel.com</span>
+                <span className="font-[Inter] text-xs sm:text-sm tracking-tighter xs:tracking-normal">info@amovitravel.com</span>
               </a>
 
               <a 
@@ -126,8 +126,8 @@ function Footer() {
             </nav>
           </div>
 
-          {/* ستون چهارم: بخش قوانین و حریم خصوصی (در موبایل کل عرض ۲ ستون را پوشش می‌دهد) */}
-          <div className="col-span-2 md:col-span-1 flex flex-col items-start mt-4 md:mt-0">
+          {/* ستون چهارم: بخش قوانین و حریم خصوصی */}
+          <div className="col-span-1 flex flex-col items-start">
             <h3 className="text-[14px] font-bold text-white tracking-wide border-b border-white/10 pb-1.5 w-fit">
               {isRtl ? "قوانین و مقررات" : "Legal"}
             </h3>
