@@ -24,5 +24,39 @@
     "readMore": "Read More",
     "loading": "Loading...",
     "successMessage": "Your inquiry has been submitted successfully!"
+  },
+
+  "tourPage":{
+      "heroSection": {
+      "label": "TOUR PACKAGES",
+      "title": "Tour",
+      "titleHighlight": "Packages",
+      "subtitle": "Thoughtfully designed journeys to discover Afghanistan",
+      "button": "Explore Package"
+    },
+
+    "discoverSection": {
+    "title": "Discover Afghanistan Your Way",
+    "description": "Explore Afghanistan through carefully planned journeys combining destinations, accommodation, transportation, guides, and travel support"
+  },
+
+  "exploreSection": {
+    "label": "EXPLORE OUR PACKAGES",
+    "title": "Explore Our Packages",
+    "description": "Discover journeys designed around Afghanistan's culture, history, and interesting places.",
+    "button": "Explore Package"
+  },
+  
+  "exploreCTA": {
+  "bedroom": "Bedroom",
+  "transport": "Transport",
+  "people": "People",
+  "meetNow": "Meet Now",
+  "days": "Days",
+  "nights": "Nights"
   }
+
+  }
+
+
 }

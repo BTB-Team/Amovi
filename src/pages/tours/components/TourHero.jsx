@@ -3,8 +3,8 @@ import { ArrowRight, ArrowLeft } from "lucide-react";
 import { useLangStore } from "../../../store/useLangStore";
 
 const TourHero = () => {
-  const { currentLang } = useLangStore();
-
+  const { currentLang, translations } = useLangStore();
+  const hero = translations.tourPage.heroSection;
   const isRTL = currentLang === "fa";
 
   return (
@@ -26,18 +26,21 @@ const TourHero = () => {
         className="relative z-10 p-8 font-sans max-w-[450px] 
       sm:px-12 md:px-14 md:max-w-[500px] lg:max-w-[600px] xl:max-w-[750px] "
       >
-        <p className="text-xs text-[var(--color-amovi-gold)]">TOUR PACKAGES</p>
+        <p className="text-xs text-[var(--color-amovi-gold)]">{hero.label}</p>
 
         <h1 className="mb-1 text-3xl font-bold text-[var(--color-amovi-gray-light)] sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-          Tour <span className="text-[var(--color-amovi-gold)]">Packages</span>
+          {hero.title}{" "}
+          <span className="text-[var(--color-amovi-gold)]">
+            {hero.titleHighlight}
+          </span>
         </h1>
 
         <p className="mb-2 text-base text-[var(--color-amovi-gray-light)] sm:text-lg md:text-xl md:mb-3 lg:text-2xl xl:text-3xl xl:mb-5">
-          Thoughtfully designed journeys to discover Afghanistan
+          {hero.subtitle}
         </p>
 
         <button className="flex cursor-pointer gap-3 rounded-full bg-[var(--color-amovi-gold)] px-3 py-1 text-sm font-bold text-[var(--color-amovi-navy)] sm:py-2 xl:py-3 xl:px-6 xl:text-base">
-          Explore Package
+          {hero.button}
           {isRTL ? (
             <ArrowLeft className="mt-1 self-center" size={16} />
           ) : (
