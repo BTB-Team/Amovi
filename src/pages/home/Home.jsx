@@ -29,12 +29,30 @@ export default function Home() {
   }, []);
 
   return (
-    // کانتینر اصلی پروژه با حداکثر عرض ۱۴۴۰ پیکسل و سنتر شده در مانیتورهای عریض
     <main className="w-full max-w-[1440px] mx-auto bg-[#14213D] text-white overflow-x-hidden font-['Sahel'] shadow-2xl">
-      <Hero currentLang={currentLang} translations={translations} />
+      {/* هیرو سکشن اصلی */}
+      <Hero currentLang={currentLang} />
+      
+      {/* درباره ما و تجربه */}
       <AboutExperience currentLang={currentLang} translations={translations} />
-      <ServicesHighlights currentLang={currentLang} translations={translations} destinations={destinations} tours={tours} />
-      <Testimonials currentLang={currentLang} translations={translations} testimonials={testimonials} loading={loading} />
+      
+      {/* 🔴 این سکشن به عنوان هدف اسکرول تنظیم شده است */}
+      <div id="featured-tours" className="w-full">
+        <ServicesHighlights 
+          currentLang={currentLang} 
+          translations={translations} 
+          destinations={destinations} 
+          tours={tours} 
+        />
+      </div>
+      
+      {/* نظرات مسافران VIP */}
+      <Testimonials 
+        currentLang={currentLang} 
+        translations={translations} 
+        testimonials={testimonials} 
+        loading={loading} 
+      />
     </main>
   );
 }
