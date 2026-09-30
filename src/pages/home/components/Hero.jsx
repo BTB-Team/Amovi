@@ -12,41 +12,45 @@ export default function Hero({ currentLang }) {
   const isRtl = currentLang === 'fa';
 
   return (
-    <section className="relative w-full h-[95vh] min-h-[750px] max-h-[950px] flex flex-col justify-center overflow-hidden bg-[#14213D]" dir="ltr">
+    <section className="relative w-full h-[95vh] min-h-[720px] sm:min-h-[800px] md:min-h-[750px] max-h-[950px] flex flex-col justify-center overflow-hidden bg-[#14213D]" dir="ltr">
       
       {/* ۱. نوبار شناور با فاصله از سقف مرورگر */}
-      <div className="fixed top-4 left-0 w-full z-50 px-4 md:px-8 pointer-events-none">
+      <div className="fixed top-4 left-0 w-full z-50 px-4 sm:px-6 md:px-8 pointer-events-none">
         <div className="max-w-[1220px] mx-auto w-full pointer-events-auto">
           <Header />
         </div>
       </div>
 
-      {/* تصویر پس‌زمینه سراسری با ابعاد کامل */}
+      {/* تصویر پس‌زمینه سراسری - در حالت دری عکس فلیپ می‌شود */}
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+        className={`absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-500 ${isRtl ? 'scale-x-[-1]' : ''}`}
         style={{ backgroundImage: `url(${heroBg})` }}
       />
 
-      {/* ۲. لایه سرمه‌ای تیره قفل شده در سمت چپ */}
-      <div className="absolute inset-y-0 left-0 w-full md:w-[55%] z-10 bg-gradient-to-r from-[#14213D]/95 via-[#14213D]/75 to-transparent pointer-events-none" />
+      {/* ۲. لایه گرادینت سرمه‌ای تیره هوشمند */}
+      <div className={`absolute inset-y-0 w-full md:w-[55%] z-10 pointer-events-none transition-all duration-500
+        ${isRtl 
+          ? 'right-0 left-auto bg-gradient-to-l from-[#14213D]/95 via-[#14213D]/75 to-transparent' 
+          : 'left-0 right-auto bg-gradient-to-r from-[#14213D]/95 via-[#14213D]/75 to-transparent'
+        }`} 
+      />
 
       {/* ۳. کانتینر اصلی محتوا با عرض دقیق ۱۲۲۰ پیکسل */}
-      <div className="w-full max-w-[1220px] mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-20 h-full pt-30 text-left" dir="ltr">
+      <div className="w-full max-w-[1220px] mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-4 lg:gap-8 items-center relative z-20 h-full pt-24 pb-12 md:py-0 text-left" dir="ltr">
         
-        {/* 🔴 بخش متن هیرو - استفاده از items-stretch برای کشیده شدن و تراز شدن قطعی لبه‌ها روی هم در حالت فارسی */}
+        {/* 🔴 بخش متن هیرو */}
         <div 
-          className={`lg:col-span-6 flex flex-col justify-center space-y-6 -mt-6 w-full ${isRtl ? 'items-stretch text-right' : 'items-start text-left'}`}
+          className={`w-full md:col-span-6 flex flex-col justify-center space-y-4 sm:space-y-6 lg:-mt-6 
+            ${isRtl ? 'md:order-2 items-stretch text-right' : 'md:order-1 items-start text-left'}`}
           dir={isRtl ? "rtl" : "ltr"}
         >
-          <div className={`space-y-3 flex flex-col w-full ${isRtl ? 'items-stretch' : 'items-start'}`}>
-            <span 
-              className="text-[#FCA311] font-bold tracking-widest text-xs md:text-sm block uppercase font-[Inter]"
-            >
+          <div className={`space-y-2 sm:space-y-3 flex flex-col w-full ${isRtl ? 'items-stretch' : 'items-start'}`}>
+            <span className="text-[#FCA311] font-bold tracking-widest text-xs md:text-sm block uppercase font-[Inter]">
               {isRtl ? 'آمووی ترول' : 'AMOVI TRAVEL'}
             </span>
             
             <h1 
-              className="text-4xl md:text-5xl lg:text-[46px] xl:text-[48px] font-extrabold leading-[1.2] text-white tracking-tight w-full"
+              className="text-3xl sm:text-4xl md:text-[36px] lg:text-[46px] xl:text-[48px] font-extrabold leading-[1.25] sm:leading-[1.2] text-white tracking-tight w-full"
               style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}
             >
               {isRtl ? (
@@ -63,7 +67,7 @@ export default function Hero({ currentLang }) {
             </h1>
             
             <p 
-              className="text-gray-200/90 text-sm md:text-[15px] max-w-md leading-relaxed font-light w-full"
+              className="text-gray-200/90 text-xs sm:text-sm md:text-[14px] lg:text-[15px] max-w-xs sm:max-w-md leading-relaxed font-light w-full"
               style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}
             >
               {isRtl 
@@ -72,13 +76,13 @@ export default function Hero({ currentLang }) {
             </p>
           </div>
 
-          {/* 🔴 دکمه مشاهده تورها - تراز شده دقیقاً بر اساس لبه‌ی پایانی خط افقی متن بالایی خود در حالت فارسی */}
-          <div className={`flex w-full ${isRtl ? 'justify-start' : 'justify-start'} pt-1`}>
+          {/* دکمه مشاهده تورها */}
+          <div className="flex pt-1">
             <button 
               onClick={() => {
                 document.getElementById('featured-tours')?.scrollIntoView({ behavior: 'smooth' });
               }}
-              className="flex items-center gap-3 bg-[#FCA311] hover:bg-[#e08f0a] text-[#14213D] font-extrabold px-6 py-3 rounded-full transition-all duration-300 shadow-md shadow-[#FCA311]/10 group text-xs tracking-wider uppercase cursor-pointer font-[Inter]"
+              className="flex items-center gap-3 bg-[#FCA311] hover:bg-[#e08f0a] text-[#14213D] font-extrabold px-5 py-2.5 sm:px-6 sm:py-3 rounded-full transition-all duration-300 shadow-md shadow-[#FCA311]/10 group text-xs tracking-wider uppercase cursor-pointer font-[Inter]"
             >
               <span>{isRtl ? 'مشاهده تورها' : 'Explore Tours'}</span>
               <svg className={`w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1 ${isRtl ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
@@ -88,36 +92,32 @@ export default function Hero({ currentLang }) {
           </div>
         </div>
 
-        {/* 🔴 ۴. بخش کلاژ تصاویر دایره‌ای - کاملاً ریسپانسیو شده برای تبلت و موبایل بدون دستکاری تنظیمات و تداخل دسکتاپ شما */}
-        <div className="lg:col-span-6 flex justify-center lg:justify-end items-center relative min-h-[380px] sm:min-h-[500px] lg:min-h-[580px] -mt-10">
-          {/* کانتینر اصلی کلاژ دارای ابعاد متغیر بر اساس اندازه صفحه است */}
-          <div className="relative w-[300px] h-[300px] sm:w-[440px] sm:h-[440px] lg:w-[550px] lg:h-[550px] mr-0">
+        {/* 🔴 ۴. بخش کلاژ تصاویر دایره‌ای - ارتقای ابعاد و ایجاد فاصله ایمن از لبه‌ها در تبلت و موبایل */}
+        <div className={`w-full md:col-span-6 flex items-center relative mt-4 md:mt-0 lg:mt-12 pb-6 md:pb-0
+          ${isRtl ? 'md:order-1 justify-start' : 'md:order-2 justify-end'}`}
+        >
+          {/* کانتینر اصلی کلاژ: دایره‌ها در موبایل (۳۲۵ تا ۴۲۵) بزرگ‌تر و با فاصله بیشتر از لبه‌ها (px-4) و در تبلت فیکس دسکتاپ هستند */}
+          <div className="relative mx-auto md:mx-0 w-[290px] h-[290px] xs:w-[320px] xs:h-[320px] sm:w-[410px] sm:h-[410px] md:w-[360px] md:h-[360px] lg:w-[480px] lg:h-[480px] xl:w-[550px] xl:h-[550px]">
             
             {/* دایره بزرگ پایه در بالا */}
-            <div className="absolute w-[210px] h-[210px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-10 top-6 right-4 sm:right-8 hover:scale-105 transition-transform duration-500">
-              <img 
-                src={heroMain} 
-                alt="Main Luxury View" 
-                className="w-full h-full object-cover"
-              />
+            <div className={`absolute w-[190px] h-[190px] sm:w-[280px] sm:h-[280px] md:w-[250px] md:h-[250px] lg:w-[330px] lg:h-[330px] xl:w-[380px] xl:h-[380px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-10 top-4 transition-all duration-500
+              ${isRtl ? 'left-2 sm:left-8' : 'right-2 sm:right-8'}`}
+            >
+              <img src={heroMain} alt="Main Luxury View" className="w-full h-full object-cover" />
             </div>
 
             {/* دایره متوسط سمت چپ */}
-            <div className="absolute w-[150px] h-[150px] sm:w-[215px] sm:h-[215px] lg:w-[270px] lg:h-[270px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-20 bottom-0 left-2 sm:left-6 hover:scale-105 transition-transform duration-500">
-              <img 
-                src={heroTop} 
-                alt="Top Experience" 
-                className="w-full h-full object-cover"
-              />
+            <div className={`absolute w-[140px] h-[140px] sm:w-[200px] sm:h-[200px] md:w-[180px] md:h-[180px] lg:w-[230px] lg:h-[230px] xl:w-[270px] xl:h-[270px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-20 bottom-2 transition-all duration-500
+              ${isRtl ? 'right-2 sm:right-6' : 'left-2 sm:left-6'}`}
+            >
+              <img src={heroTop} alt="Top Experience" className="w-full h-full object-cover" />
             </div>
 
-            {/* دایره کوچک سمت راست بالا */}
-            <div className="absolute w-[115px] h-[115px] sm:w-[165px] sm:h-[165px] lg:w-[210px] lg:h-[210px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-30 bottom-10 sm:bottom-16 -right-4 sm:-right-8 lg:-right-12 hover:scale-105 transition-transform duration-500">
-              <img 
-                src={heroBottom} 
-                alt="Bottom Experience" 
-                className="w-full h-full object-cover"
-              />
+            {/* دایره کوچک رویی */}
+            <div className={`absolute w-[110px] h-[110px] sm:w-[160px] sm:h-[160px] md:w-[140px] md:h-[140px] lg:w-[180px] lg:h-[180px] xl:w-[210px] xl:h-[210px] rounded-full border-4 lg:border-[6px] border-[#FCA311] overflow-hidden shadow-2xl z-30 bottom-10 transition-all duration-500
+              ${isRtl ? 'left-0 sm:-left-2' : '-right-2 sm:-right-8 xl:-right-12'}`}
+            >
+              <img src={heroBottom} alt="Bottom Experience" className="w-full h-full object-cover" />
             </div>
 
           </div>
