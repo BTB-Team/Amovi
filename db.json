@@ -69,50 +69,280 @@
 ],
 
 "tours": [
+
 {
 "id": "tour-001",
 "slug": "discover-afghanistan",
+
 "fa": {
-"title": "کشف افغانستان",
-"description": "یک تجربه سفری اختصاصی در سراسر افغانستان."
+  "title": "کابل؛ تجربه پایتخت",
+  "description": "تجربه‌ای از شهر و فرهنگ",
+  "days": "۴",
+    "nights": "۳"
 },
+
 "en": {
-"title": "Discover Afghanistan",
-"description": "A customized travel experience across Afghanistan."
+"title": "Kabul-The Capital Experince",
+"description": "City & Cultural Experince.",
+ "days": 4,
+    "nights": 3 
 },
 "destinationIds": [
 "destination-001",
 "destination-002",
 "destination-003"
 ],
-"durationDays": 7,
+
+    
+
 "price": 0,
 "currency": "USD",
-"image": "",
+"image": "tours/images/kabulPictures.webp",
 "isActive": true,
 "createdAt": "2026-09-28T08:00:00Z"
 },
+
 {
 "id": "tour-002",
 "slug": "bamyan-cultural-tour",
 "fa": {
 "title": "تور فرهنگی بامیان",
-"description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید."
+"description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید.",
+"days": "۴",
+"nights": "۳"
 },
 "en": {
 "title": "Bamyan Cultural Tour",
-"description": "Explore the cultural and natural attractions of Bamyan."
+"description": "Explore the cultural and natural attractions of Bamyan.",
+"days": 4,
+"nights": 3 
 },
 "destinationIds": [
 "destination-002"
 ],
-"durationDays": 3,
+
+
 "price": 0,
 "currency": "USD",
-"image": "",
+"image": "tours/images/bamyanPictures.webp",
 "isActive": true,
 "createdAt": "2026-09-28T08:00:00Z"
-}
+},
+   {
+      "id": "tour-003",
+      "slug": "herat-heritage-experience",
+      "fa": {
+        "title": "هرات؛ تجربه میراث فرهنگی",
+        "description": "تجربه‌ای از میراث تاریخی و فرهنگی هرات.",
+        "days": "۳",
+        "nights": "۲",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Herat: The Heritage Experience",
+        "description": "Experience the historical and cultural heritage of Herat.",
+        "days": 3,
+        "nights": 2,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-004"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/heratPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-004",
+      "slug": "mazar-balkh-timeless-legacy",
+      "fa": {
+        "title": "مزار شریف و بلخ؛ میراث جاودانه",
+        "description": "سفری برای کشف میراث تاریخی و فرهنگی مزار شریف و بلخ.",
+        "days": "۳",
+        "nights": "۲",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Mazar-i-Sharif & Balkh: The Timeless Legacy",
+        "description": "Discover the historical and cultural heritage of Mazar-i-Sharif and Balkh.",
+        "days": 3,
+        "nights": 2,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-005",
+        "destination-006"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/mazarPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-005",
+      "slug": "kandahar-historic-heart",
+      "fa": {
+        "title": "قندهار؛ قلب تاریخی",
+        "description": "تجربه‌ای از تاریخ و فرهنگ شهر تاریخی قندهار.",
+        "days": "۳",
+        "nights": "۲",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Kandahar: The Historic Heart",
+        "description": "Experience the history and culture of the historic city of Kandahar.",
+        "days": 3,
+        "nights": 2,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-007"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/kandaharPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-006",
+      "slug": "nuristan-untamed-experience",
+      "fa": {
+        "title": "نورستان؛ تجربه طبیعت بکر",
+        "description": "سفری ماجراجویانه برای کشف طبیعت بکر و چشم‌اندازهای نورستان.",
+        "days": "۵",
+        "nights": "۴",
+        "travelStyle": "تجربه طبیعت و ماجراجویی"
+      },
+      "en": {
+        "title": "Nuristan: The Untamed Experience",
+        "description": "An adventurous journey through the untouched nature and landscapes of Nuristan.",
+        "days": 5,
+        "nights": 4,
+        "travelStyle": "Nature & Adventure Experience"
+      },
+      "destinationIds": [
+        "destination-008"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/noristanPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-007",
+      "slug": "kabul-bamyan-ghazni",
+      "fa": {
+        "title": "کابل → بامیان → غزنی",
+        "description": "سفری برای کشف میراث تاریخی و طبیعت افغانستان.",
+        "days": "۶",
+        "nights": "۵",
+        "travelStyle": "تجربه میراث و طبیعت"
+      },
+      "en": {
+        "title": "Kabul → Bamyan → Ghazni",
+        "description": "A journey through Afghanistan's historical heritage and natural landscapes.",
+        "days": 6,
+        "nights": 5,
+        "travelStyle": "Heritage & Nature Experience"
+      },
+      "destinationIds": [
+        "destination-001",
+        "destination-002",
+        "destination-009"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/kabulPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-008",
+      "slug": "kandahar-helmand",
+      "fa": {
+        "title": "قندهار → هلمند",
+        "description": "سفری برای کشف میراث تاریخی و فرهنگی جنوب افغانستان.",
+        "days": "۴",
+        "nights": "۳",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Kandahar → Helmand",
+        "description": "Explore the historical and cultural heritage of southern Afghanistan.",
+        "days": 4,
+        "nights": 3,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-007",
+        "destination-010"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/kandaharPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-009",
+      "slug": "herat-ghor",
+      "fa": {
+        "title": "هرات → غور",
+        "description": "سفری برای کشف میراث تاریخی و فرهنگی هرات و غور.",
+        "days": "۵",
+        "nights": "۴",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Herat → Ghor",
+        "description": "Discover the historical and cultural heritage of Herat and Ghor.",
+        "days": 5,
+        "nights": 4,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-004",
+        "destination-011"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/ghorPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+      "id": "tour-010",
+      "slug": "mazar-balkh-samangan",
+      "fa": {
+        "title": "مزار شریف → بلخ → سمنگان",
+        "description": "سفری برای کشف میراث تاریخی و فرهنگی شمال افغانستان.",
+        "days": "۵",
+        "nights": "۴",
+        "travelStyle": "تجربه میراث و فرهنگ"
+      },
+      "en": {
+        "title": "Mazar-i-Sharif → Balkh → Samangan",
+        "description": "Explore the historical and cultural heritage of northern Afghanistan.",
+        "days": 5,
+        "nights": 4,
+        "travelStyle": "Heritage & Cultural Experience"
+      },
+      "destinationIds": [
+        "destination-005",
+        "destination-006",
+        "destination-012"
+      ],
+      "price": 0,
+      "currency": "USD",
+      "image": "tours/images/mazarPictures.webp",
+      "isActive": true,
+      "createdAt": "2026-09-28T08:00:00Z"
+    }
 ],
 
 "services": [
