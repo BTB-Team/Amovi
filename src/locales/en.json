@@ -54,7 +54,89 @@
   "meetNow": "Meet Now",
   "days": "Days",
   "nights": "Nights"
+  },
+
+  "travelCTA": {
+    "eyebrow": "Travel Themes",
+    "title": " Choose Your Travel Experience",
+    "plane":{
+      "title": "Destination Experiences",
+      "description": "Discover individual destinations through carefully designed journeys."
+    },
+    "map":{
+      "title": "Multi-Destination Journeys",
+      "description": "Connect multiple destinations in one seamless journey across Afghanistan."
+    },
+    "landmark":{
+      "title": "Cultural & Heritage",
+      "description": "Explore Afghanistan's history, culture, traditions, and heritage."
+    },
+    "mountain":{
+      "title": "Nature & Adventure",
+      "description": "Experience mountains, valleys, lakes, landscapes, and outdoor activities."
+    },
+    "crown": {
+      "title": "Premium & VIP",
+      "description": "Travel with enhanced comfort, personalized arrangements, and dedicated support."
+    },
+    "setting":{
+      "title": "Customized Journeys",
+      "description": "Create a journey tailored to your interests, schedule, and travel preferences."
+    }
+    
+  },
+  
+  "moreCTA": {
+    "eyebrow": "More Than a Tour",
+    "title": "More Than a Tour",
+    "accommodation":{
+      "title": "Accommodation",
+      "description": "Selected stays for your journey."
+    },
+    "transportation":{
+      "title": "Transportation",
+      "description": "Coordinated travel between destinations."
+    },
+    "professional":{
+      "title": "Professional Guides",
+      "description": "Local guidance and cultural insight."
+    },
+    "travel":{
+      "title": "Travel Support",
+      "description": "Practical assistance throughout your journey."
+    },
+    "visa": {
+      "title": "Visa Assistance",
+      "description": "Guidance with your visa preparation."
+    }
+    
+  },
+  "workCTA":{
+    "title": "How It Works",
+    "eyebrow": "How Booking Works",
+    "package":{
+      "number": "01",
+      "title": "Choose Your Package",
+      "description": "Select the journey that interests you."
+    },
+    "request":{
+      "number": "02",
+      "title":"Send Your Request",
+      "description": "Share your dates, group details, and requirements."
+    },
+    "confirmJourney":{
+      "number": "03",
+      "title": "Confirm Your Journey",
+      "description": "Review the arrangements and complete the required payment."
+    },
+    "beginJourney":{
+      "number": "04",
+      "title": " Begin Your Journey",
+      "description" : "Receive your final travel arrangements and get ready for Afghanistan."
+    }
+
   }
+
 
   }
 

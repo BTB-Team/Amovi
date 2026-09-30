@@ -1,14 +1,7 @@
-import imageFirst from "../images/imageFirst.webp";
 import { Bed, Car, User, ArrowRight, ArrowLeft } from "lucide-react";
 import { useLangStore } from "../../../../store/useLangStore";
 
-const ExploreCTA = ({
-  image = imageFirst,
-  title = "Kabul Cultural Tour",
-  price = 850,
-  durationDay = 4,
-  durationNight = 5,
-}) => {
+const ExploreCTA = ({ image, title, price, durationDay, durationNight }) => {
   const { currentLang, translations } = useLangStore();
 
   const isRTL = currentLang === "fa";
@@ -16,7 +9,7 @@ const ExploreCTA = ({
 
   return (
     <section className="relative shadow rounded-lg ">
-      {/* ====================Position on Image */}
+      {/* ====================Position on Image=================== */}
       <div className="absolute top-3 left-5 bg-[var(--color-amovi-navy)] text-[var(--color-amovi-gray-light)] px-3 py-1 rounded-full text-sm ">
         <p>
           {durationDay} {cta.days} / {durationNight} {cta.nights}
@@ -44,7 +37,7 @@ const ExploreCTA = ({
         <h3 className="text-xl font-semibold text-[var(--color-amovi-gold)] ">
           $ {price}
         </h3>
-        <button className="flex cursor-pointer gap-3 rounded-full bg-[var(--color-amovi-gold)] px-3 py-1 text-sm font-bold text-[var(--color-amovi-navy)] sm:py-2 xl:py-3 xl:px-6 xl:text-base">
+        <button className="flex cursor-pointer gap-3 rounded-full bg-[var(--color-amovi-gold)] px-3 py-1 text-sm font-bold text-[var(--color-amovi-navy)] sm:py-1 ">
           {cta.meetNow}
           {isRTL ? (
             <ArrowLeft className="mt-1 self-center" size={16} />
