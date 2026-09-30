@@ -1,73 +1,80 @@
 {
-"users": [
-{
-"id": "user-001",
-"fullName": {
-"fa": "مدیر سیستم",
-"en": "Admin User"
-},
-"email": "[admin@amovi-travel.com](mailto:admin@amovi-travel.com)",
-"phoneWhatsApp": "+93700000000",
-"role": "admin",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+    "users": [
+    {
+    "id": "user-001",
+    "fullName": {
+    "fa": "مدیر سیستم",
+    "en": "Admin User"
+    },
+    "email": "[admin@amovi-travel.com](mailto:admin@amovi-travel.com)",
+    "phoneWhatsApp": "+93700000000",
+    "role": "admin",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    }
+    ],
 
-"destinations": [
-{
-"id": "destination-001",
-"slug": "kabul",
-"fa": {
-"name": "کابل",
-"country": "افغانستان",
-"description": "پایتخت افغانستان را کشف کنید."
-},
-"en": {
-"name": "Kabul",
-"country": "Afghanistan",
-"description": "Explore the capital city of Afghanistan."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "destination-002",
-"slug": "bamyan",
-"fa": {
-"name": "بامیان",
-"country": "افغانستان",
-"description": "میراث طبیعی و فرهنگی بامیان را کشف کنید."
-},
-"en": {
-"name": "Bamyan",
-"country": "Afghanistan",
-"description": "Discover the natural and cultural heritage of Bamyan."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "destination-003",
-"slug": "herat",
-"fa": {
-"name": "هرات",
-"country": "افغانستان",
-"description": "شهر تاریخی هرات و میراث فرهنگی آن را کشف کنید."
-},
-"en": {
-"name": "Herat",
-"country": "Afghanistan",
-"description": "Discover the historic city of Herat and its cultural heritage."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+  "provinces": [
+    {
+      "id": "kabul",
+      "slug": "kabul",
+      "images": {
+        "hero_cover": "/images/provinces/kabul/kabul-hero.webp",
+        "history_img": "/images/provinces/kabul/kabul-history.webp",
+        "culture_img": "/images/provinces/kabul/kabul-culture.webp"
+      },
+      "en": {
+        "name": "Kabul",
+        "tagline": "The Timeless Heart of Afghanistan",
+        "intro": "Kabul, the capital of Afghanistan, serves as the nation's largest urban center and its political, cultural, and economic hub. Rising high in the Hindu Kush mountains, 1,790 meters above sea level, it is one of the highest capital cities in the world. Having thrived for 3,500 years at the crossroads of Persia, India, and Central Asia, it was once a key destination on the ancient Silk Road.",
+        "marketing_pitch": "From vibrant bazaars to timeless traditions, let Amovi guide you through Kabul safely and confidently—where every corner tells a story of heritage and hope.",
+        "history_title": "History - Echoes of Kabul’s Past",
+        "history_text": "Kabul is a city shaped by centuries of culture, resilience, and transformation. Once the seat of the Mughal dynasty under Emperor Babur in the 16th century and later the capital of the Durrani Empire, Kabul has long been a crossroads of empires, scholars, and poets. In the 1960s, travelers from Europe, America, and Japan flocked to Kabul making it a legendary stop on the overland 'Hippie Trail'. It was lovingly nicknamed 'the Paris of Central Asia'.",
+        "culture_title": "Culture – The Living Heritage of Kabul",
+        "culture_text": "Kabul’s culture is a true reflection of Afghanistan’s rich diversity, where ethnicities converge. The city blends Persian and Indian influences in its literature, art, and architecture. Its cultural gems include the National Museum of Afghanistan, the National Gallery, and timeless Timurid architecture preserved in mosques and tombs. From world-renowned Afghan carpets to fine copper crafts, Kabul continues to embody a living tradition of artistry and resilience."
+      },
+      "fa": {
+        "name": "کابل",
+        "tagline": "قلب بی‌زمان و تپنده افغانستان",
+        "intro": "کابل، پایتخت افغانستان، بزرگ‌ترین مرکز شهری و قطب سیاسی، فرهنگی و اقتصادی کشور است. این شهر در میان کوه‌های هندوکش و در ارتفاع ۱۷۹۰ متری از سطح دریا قرار گرفته و یکی از مرتفع‌ترین پایتخت‌های جهان به‌شمار می‌رود. کابل با قدمتی حدود ۳۵۰۰ ساله، در تقاطع راه‌های پرشیا، هند و آسیای مرکزی، روزگاری نگین درخشان جاده باستانی ابریشم بوده است.",
+        "marketing_pitch": "از بازارهای پرجنب‌وجوش تا سنت‌های دیرینه، و از کافه‌های مدرن تا جاده‌های پر از زندگی؛ بگذارید آمووی شما را با امنیت و اطمینان در کابل راهنمایی کند — جایی که هر گوشه‌اش روایتی از اصالت و امید است.",
+        "history_title": "تاریخ - پژواک گذشته کابل",
+        "history_text": "کابل شهری است که توسط قرن‌ها فرهنگ، ایستادگی و دگرگونی شکل گرفته است. کابل که در قرن شانزدهم پایگاه امپراتوری مغول تحت فرمانروایی ظهیرالدین محمد بابر و بعدها پایتخت امپراتوری درانی بود، مدت‌ها گذرگاه امپراتوری‌ها، دانشمندان و شاعران بوده است. در دهه ۱۹۶۰، مسافرانی از جهان در مسیر معروف «هیپی تریل» به کابل سرازیر شدند. کابل در آن زمان توسط دیپلمات‌های غربی «پاریس آسیای مرکزی» نامیده می‌شد. امروز، کافه‌های مدرن در کنار زیارتگاه‌ها و باغ‌های چندصدساله قد برافراشته‌اند.",
+        "culture_title": "فرهنگ - میراث زنده کابل",
+        "culture_text": "فرهنگ کابل بازتابی واقعی از تنوع غنی افغانستان است، جایی که قومیت‌ها به هم پیوند می‌خورند. این شهر با تلفیق تأثیرات پرشین و هندی در ادبیات، هنر و معماری خود، یک مرکز شکوفای هنری است. نگین‌های فرهنگی آن شامل موزه ملی افغانستان، گالری ملی و معماری بی‌زمان دوره تیموری است که در مساجد و مقبره‌ها حفظ شده است. از فرش‌های شهره عام و خاص افغان تا صنایع دستی ظریف مس‌گری، کابل همچنان مظهر سنت زنده هنر و تاب‌آوری است."
+      },
+      "sub_destinations": [
+        {
+          "id": "bibi-mahro-hill",
+          "filter_category": "gardens-and-parks",
+          "image": "/images/kabul/bibi-mahro.webp",
+          "en": {
+            "name": "Bibi Mahro Hill",
+            "teaser": "Bibi Mahro Hill, also known as Wazir Akbar Khan Hill, is one of Kabul’s prominent elevated landmarks and a popular recreational destination featuring the national flag monument."
+          },
+          "fa": {
+            "name": "تپه بی‌بی مهرو",
+            "teaser": "تپه بی‌بی مهرو که به نام تپه وزیر اکبرخان نیز شناخته می‌شود، یکی از بناهای مرتفع برجسته و یک مقصد تفریحی محبوب در قلب پایتخت همراه با بنای یادبود پرچم ملی است."
+          }
+        },
+        {
+          "id": "bagh-e-babur",
+          "filter_category": "gardens-and-parks",
+          "image": "/images/kabul/bagh-e-babur.webp",
+          "en": {
+            "name": "Bagh-e Babur",
+            "teaser": "A historic garden where Mughal heritage, Afghan culture, architecture, and the natural beauty of Kabul come together."
+          },
+          "fa": {
+            "name": "باغ بابر",
+            "teaser": "باغی تاریخی که در آن میراث مغول، فرهنگ افغانی، معماری و زیبایی‌های طبیعی کابل با هم پیوند می‌خورند."
+          }
+        }
+      ]
+    }
+  ],
 
+<<<<<<< HEAD
 "tours": [
 
 {
@@ -344,170 +351,218 @@
       "createdAt": "2026-09-28T08:00:00Z"
     }
 ],
+=======
+    "tours": [
+    {
+    "id": "tour-001",
+    "slug": "discover-afghanistan",
+    "fa": {
+    "title": "کشف افغانستان",
+    "description": "یک تجربه سفری اختصاصی در سراسر افغانستان."
+    },
+    "en": {
+    "title": "Discover Afghanistan",
+    "description": "A customized travel experience across Afghanistan."
+    },
+    "destinationIds": [
+    "destination-001",
+    "destination-002",
+    "destination-003"
+    ],
+    "durationDays": 7,
+    "price": 0,
+    "currency": "USD",
+    "image": "",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+    "id": "tour-002",
+    "slug": "bamyan-cultural-tour",
+    "fa": {
+    "title": "تور فرهنگی بامیان",
+    "description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید."
+    },
+    "en": {
+    "title": "Bamyan Cultural Tour",
+    "description": "Explore the cultural and natural attractions of Bamyan."
+    },
+    "destinationIds": [
+    "destination-002"
+    ],
+    "durationDays": 3,
+    "price": 0,
+    "currency": "USD",
+    "image": "",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    }
+    ],
+>>>>>>> f575163 (kabul data is ready)
 
-"services": [
-{
-"id": "service-001",
-"slug": "tour-planning",
-"fa": {
-"title": "برنامه‌ریزی تور",
-"description": "برنامه‌ریزی سفری اختصاصی برای افراد و گروه‌ها."
-},
-"en": {
-"title": "Tour Planning",
-"description": "Customized travel planning for individuals and groups."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "service-002",
-"slug": "transportation",
-"fa": {
-"title": "خدمات ترانسپورت",
-"description": "تنظیم خدمات ترانسپورت برای سفر شما."
-},
-"en": {
-"title": "Transportation",
-"description": "Travel transportation arrangements for your journey."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "service-003",
-"slug": "travel-assistance",
-"fa": {
-"title": "پشتیبانی سفر",
-"description": "پشتیبانی و همراهی در طول سفر شما."
-},
-"en": {
-"title": "Travel Assistance",
-"description": "Travel support and assistance during your trip."
-},
-"image": "",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+    "services": [
+    {
+    "id": "service-001",
+    "slug": "tour-planning",
+    "fa": {
+    "title": "برنامه‌ریزی تور",
+    "description": "برنامه‌ریزی سفری اختصاصی برای افراد و گروه‌ها."
+    },
+    "en": {
+    "title": "Tour Planning",
+    "description": "Customized travel planning for individuals and groups."
+    },
+    "image": "",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+    "id": "service-002",
+    "slug": "transportation",
+    "fa": {
+    "title": "خدمات ترانسپورت",
+    "description": "تنظیم خدمات ترانسپورت برای سفر شما."
+    },
+    "en": {
+    "title": "Transportation",
+    "description": "Travel transportation arrangements for your journey."
+    },
+    "image": "",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    },
+    {
+    "id": "service-003",
+    "slug": "travel-assistance",
+    "fa": {
+    "title": "پشتیبانی سفر",
+    "description": "پشتیبانی و همراهی در طول سفر شما."
+    },
+    "en": {
+    "title": "Travel Assistance",
+    "description": "Travel support and assistance during your trip."
+    },
+    "image": "",
+    "isActive": true,
+    "createdAt": "2026-09-28T08:00:00Z"
+    }
+    ],
 
-"blogPosts": [
-{
-"id": "post-001",
-"slug": "exploring-afghanistan",
-"fa": {
-"title": "کشف افغانستان",
-"excerpt": "با زیبایی‌ها، فرهنگ و تاریخ افغانستان آشنا شوید.",
-"content": "محتوای مقاله در این بخش قرار خواهد گرفت.",
-"author": "اموی تراول"
-},
-"en": {
-"title": "Exploring Afghanistan",
-"excerpt": "Discover the beauty, culture and history of Afghanistan.",
-"content": "Blog content will be added here.",
-"author": "Amovi Travel"
-},
-"image": "",
-"isPublished": true,
-"publishedAt": "2026-09-28T08:00:00Z",
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+    "blogPosts": [
+    {
+    "id": "post-001",
+    "slug": "exploring-afghanistan",
+    "fa": {
+    "title": "کشف افغانستان",
+    "excerpt": "با زیبایی‌ها، فرهنگ و تاریخ افغانستان آشنا شوید.",
+    "content": "محتوای مقاله در این بخش قرار خواهد گرفت.",
+    "author": "اموی تراول"
+    },
+    "en": {
+    "title": "Exploring Afghanistan",
+    "excerpt": "Discover the beauty, culture and history of Afghanistan.",
+    "content": "Blog content will be added here.",
+    "author": "Amovi Travel"
+    },
+    "image": "",
+    "isPublished": true,
+    "publishedAt": "2026-09-28T08:00:00Z",
+    "createdAt": "2026-09-28T08:00:00Z"
+    }
+    ],
 
-"masterRequests": [
-{
-"id": "request-001",
-"fullName": "Test Customer",
-"email": "[customer@example.com](mailto:customer@example.com)",
-"phoneWhatsApp": "+93700000001",
-"preferredDate": "2026-10-15",
-"travelersCount": 2,
-"packageOrService": {
-"fa": "تور فرهنگی بامیان",
-"en": "Bamyan Cultural Tour"
-},
-"additionalRequirements": {
-"fa": "",
-"en": ""
-},
-"privacyConsent": true,
-"status": "pending",
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+    "masterRequests": [
+        {
+          "id": "request-001",
+          "fullName": "Test Customer",
+          "email": "[customer@example.com](mailto:customer@example.com)",
+          "phoneWhatsApp": "+93700000001",
+          "preferredDate": "2026-10-15",
+          "travelersCount": 2,
+          "packageOrService": {
+          "fa": "تور فرهنگی بامیان",
+          "en": "Bamyan Cultural Tour"
+        },
+          "additionalRequirements": {
+          "fa": "",
+          "en": ""
+        },
+         "privacyConsent": true,
+         "status": "pending",
+         "createdAt": "2026-09-28T08:00:00Z"
+        }
+    ],
 
-"testimonials": [
-{
-"id": "testimonial-001",
-"fa": {
-"name": "سارا جانسون",
-"country": "بریتانیا",
-"message": "سفر ما به شکل بسیار خوبی سازماندهی شده بود و تیم در تمام طول سفر بسیار همکاری و کمک کرد."
-},
-"en": {
-"name": "Sarah Johnson",
-"country": "United Kingdom",
-"message": "Our trip was beautifully organized and the team was very helpful throughout the journey."
-},
-"rating": 5,
-"image": "",
-"isPublished": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "testimonial-002",
-"fa": {
-"name": "محمد علی",
-"country": "امارات متحده عربی",
-"message": "یک تجربه عالی از سفر با پشتیبانی حرفه‌ای و ارتباطات بسیار خوب."
-},
-"en": {
-"name": "Mohammad Ali",
-"country": "United Arab Emirates",
-"message": "A great travel experience with professional support and excellent communication."
-},
-"rating": 5,
-"image": "",
-"isPublished": true,
-"createdAt": "2026-09-28T08:00:00Z"
-},
-{
-"id": "testimonial-003",
-"fa": {
-"name": "اما ویلسون",
-"country": "کانادا",
-"message": "برنامه سفر به خوبی تنظیم شده بود و این تجربه برای من خاطره‌انگیز بود."
-},
-"en": {
-"name": "Emma Wilson",
-"country": "Canada",
-"message": "The itinerary was well planned and the experience was memorable."
-},
-"rating": 4,
-"image": "",
-"isPublished": true,
-"createdAt": "2026-09-28T08:00:00Z"
-}
-],
+    "testimonials": [
+        {
+            "id": "testimonial-001",
+            "fa": {
+                "name": "سارا جانسون",
+                "country": "بریتانیا",
+                "message": "سفر ما به شکل بسیار خوبی سازماندهی شده بود و تیم در تمام طول سفر بسیار همکاری و کمک کرد."
+            },
+            "en": {
+                 "name": "Sarah Johnson",
+                 "country": "United Kingdom",
+            "message": "Our trip was beautifully organized and the team was very helpful throughout the journey."
+            },
+            "rating": 5,
+            "image": "",
+            "isPublished": true,
+            "createdAt": "2026-09-28T08:00:00Z"
+        },
+        {
+          "id": "testimonial-002",
+          "fa": {
+            "name": "محمد علی",
+            "country": "امارات متحده عربی",
+            "message": "یک تجربه عالی از سفر با پشتیبانی حرفه‌ای و ارتباطات بسیار خوب."
+          },
+          "en": {
+             "name": "Mohammad Ali",
+             "country": "United Arab Emirates",
+             "message": "A great travel experience with professional support and excellent communication."
+          },
+          "image": "",
+          "rating": 5,
+          "isPublished": true,
+          "createdAt": "2026-09-28T08:00:00Z"
+        },
+        {
+         "id": "testimonial-003",
+             "fa": {
+             "name": "اما ویلسون",
+             "country": "کانادا",
+             "message": "برنامه سفر به خوبی تنظیم شده بود و این تجربه برای من خاطره‌انگیز بود."
+         },
+         "en": {
+             "name": "Emma Wilson",
+             "country": "Canada",
+             "message": "The itinerary was well planned and the experience was memorable."
+         },
+         "rating": 4,
+         "image": "",
+         "isPublished": true,
+         "createdAt": "2026-09-28T08:00:00Z"
+        }
+    ],
 
-"contactMessages": [
-{
-"id": "message-001",
-"fullName": "Test Visitor",
-"email": "[visitor@example.com](mailto:visitor@example.com)",
-"phone": "+93700000002",
-"subject": {
-"fa": "سوال عمومی",
-"en": "General Inquiry"
-},
-"message": {
-"fa": "این یک پیام آزمایشی برای بخش تماس است.",
-"en": "This is a test contact message."
-},
-"status": "unread",
-"createdAt": "2026-09-28T08:00:00Z"
-}
-]
+    "contactMessages": [
+        {
+         "id": "message-001",
+         "fullName": "Test Visitor",
+         "email": "[visitor@example.com](mailto:visitor@example.com)",
+         "phone": "+93700000002",
+         "subject": {
+         "fa": "سوال عمومی",
+         "en": "General Inquiry"
+        },
+         "message": {
+         "fa": "این یک پیام آزمایشی برای بخش تماس است.",
+         "en": "This is a test contact message."
+        },
+            "status": "unread",
+            "createdAt": "2026-09-28T08:00:00Z"
+        }
+    ]
 }
