@@ -5,12 +5,9 @@ const ExploreHandle = () => {
   const { currentLang } = useLangStore();
   const tours = data.tours;
 
-  // console.log(tour[0].price);
-  // console.log(tour[0].days);
-
   return (
     <section className="m-auto max-w-[1600px] ">
-      <div className=" m-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className=" m-10 grid justify-items-center grid-cols-1  gap-4 min-[650px]:grid-cols-2 min-[900px]:grid-cols-3 min-[1162px]:grid-cols-4 text-[var(--color-amovi-navy)]">
         {tours.map((tour) => (
           <ExploreCTA
             key={tour.id}

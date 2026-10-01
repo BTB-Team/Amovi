@@ -47,7 +47,7 @@ const HandleMoreCTA = () => {
           {moreCTA.title}
         </h2>
       </div>
-      <div className="mx-10 mb-10 grid min-[598px]:grid-cols-2 gap-4 min-[890px]:grid-cols-3 min-[1170px]:grid-cols-4 xl:grid-cols-5">
+      <div className="mx-10 mb-10 grid min-[598px]:grid-cols-2 gap-4 min-[890px]:grid-cols-3 min-[1170px]:grid-cols-4 xl:grid-cols-5 text-[var(--color-amovi-navy)]">
         {data.map((item) => (
           <MoreCTA
             key={item.id}
