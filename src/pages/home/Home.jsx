@@ -6,6 +6,8 @@ import Hero from './components/Hero';
 import AboutExperience from './components/AboutExperience';
 import ServicesHighlights from './components/ServicesHighlights';
 import Testimonials from './components/Testimonials';
+// ۱. ایمپورت کردن کامپوننت بنر دعوت به سفر منطبق بر تمپلت
+import CallToAction from './components/CallToAction';
 
 export default function Home() {
   const { currentLang, translations } = useLangStore();
@@ -36,7 +38,7 @@ export default function Home() {
       {/* درباره ما و تجربه */}
       <AboutExperience currentLang={currentLang} translations={translations} />
       
-      {/* 🔴 این سکشن به عنوان هدف اسکرول تنظیم شده است */}
+      {/* سکشن خدمات ۶گانه (هدف اسکرول نرم دکمه هیرو) */}
       <div id="featured-tours" className="w-full">
         <ServicesHighlights 
           currentLang={currentLang} 
@@ -53,6 +55,9 @@ export default function Home() {
         testimonials={testimonials} 
         loading={loading} 
       />
+
+      {/* 🔴 ۲. افزودن سکشن بنر دعوت به سفر (CTA) عینا مطابق با تصویر تمپلت */}
+      <CallToAction currentLang={currentLang} />
     </main>
   );
 }
