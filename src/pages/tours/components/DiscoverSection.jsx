@@ -5,14 +5,14 @@ const DiscoverSection = () => {
   const discover = translations.tourPage.discoverSection;
   return (
     <section
-      className="m-auto max-w-[1600px] px-8 py-5  grid grid-cols-1
+      className=" px-8 py-5  grid grid-cols-1
        sm:px-16 sm:py-10 min-[1200px]:grid-cols-2 min-[1200px]:gap-8  "
     >
       <div className="min-[1200px]:order-2">
-        <h2 className="my-2 text-2xl font-semibold font-sans text-[var( --color-amovi-navy: #14213D;)] sm:text-3xl md:text-4xl lg:text-5xl">
+        <h2 className="my-2 text-2xl font-semibold text-[var(--color-amovi-navy)] sm:text-3xl md:text-4xl lg:text-5xl">
           {discover.title}
         </h2>
-        <p className="text-sm text-[var(--color-amovi-black)] sm:text-base md:text-lg lg:text-xl">
+        <p className="text-sm text-[var(--color-amovi-black)] leading-relaxed sm:text-base md:text-lg lg:text-xl">
           {discover.description}
         </p>
       </div>

@@ -55,7 +55,7 @@ const HandelTravelCTA = () => {
         {cta.title}
       </h2>
 
-      <div className="m-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="m-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-[var(--color-amovi-navy)]">
         {data.map((item) => (
           <TravelCTA
             key={item.id}

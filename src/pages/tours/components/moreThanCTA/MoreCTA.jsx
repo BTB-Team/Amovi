@@ -6,7 +6,7 @@ const MoreCTA = ({ title, icon, description }) => {
       </div>
       <div>
         <p className="font-bold py-1 text-lg">{title}</p>
-        <p className="text-sm sm:text-base">{description}</p>
+        <p className="text-sm leading-relaxed sm:text-base">{description}</p>
       </div>
     </section>
   );
