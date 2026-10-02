@@ -1,5 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
 import { useLangStore } from '../../store/useLangStore';
+import Header from "../layout/Header.jsx";
 
 // ۱. ایمپورت کامپوننت مستقل هیرو سکشن ولایت
 import ProvinceHero from './components/ProvinceHero';
@@ -34,13 +35,24 @@ export default function ProvinceView() {
 
   return (
     <div className="w-full bg-[#F8FAFC] pb-12">
+      {/* 🟢 ۱. صدا زدن هدر به صورت استاندارد و بازکردن زنجیر کانتینر ۱۲۲۰ پیکسلی */}
+      <Header />
       
-      {/* 👑 ۲. صدا زدن کامپوننت هیرو سکشن به همراه ارسال داده‌های داینامیک */}
+      {/* 👑 ۲. صدا زدن کامپوننت هیرو سکشن (دقیقاً تراز با لبه‌های هدر بالای خود) */}
       <ProvinceHero 
         province={province} 
         localData={localData} 
         isRtl={isRtl} 
       />
+
+      {/* 📥 نگه‌دارنده موقت سکشن‌های بعدی (تاریخ، فرهنگ و فیلترینگ) */}
+      <div id="explore-hub" className="w-[96%] max-w-[1600px] mx-auto mt-12 py-12 text-center text-slate-400 border border-dashed border-slate-200 rounded-3xl bg-white shadow-sm">
+        <p style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}>
+          {isRtl 
+            ? "بخش‌های بعدی (داستان تاریخ و فرهنگ ولایت) در گام بعدی به این قسمت اضافه می‌شوند..." 
+            : "The next sections (History and Culture Story) will be added here in the next step..."}
+        </p>
+      </div>
 
       {/* 📥 نگه‌دارنده موقت سکشن‌های بعدی (تاریخ، فرهنگ و فیلترینگ) */}
       <div id="explore-hub" className="w-[96%] max-w-[1600px] mx-auto mt-12 py-12 text-center text-slate-400 border border-dashed border-slate-200 rounded-3xl bg-white shadow-sm">

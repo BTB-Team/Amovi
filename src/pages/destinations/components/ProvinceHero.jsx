@@ -2,27 +2,42 @@ import { MapPin } from 'lucide-react';
 
 export default function ProvinceHero({ province, localData, isRtl }) {
   return (
-    <section className="w-[96%] max-w-[1600px] mx-auto mt-6 relative h-[65vh] sm:h-[75vh] rounded-3xl overflow-hidden shadow-2xl group">
+    /* 👑 هیرو با قد عمیق، هماهنگ با لایه زدایندکس و مارجین منفی جهت اتصال به سقف */
+    <section className="w-[100%] max-w-[1600px] mx-auto relative h-[95vh] md:h-[88vh] overflow-hidden shadow-2xl group z-0 -mt-24 sm:-mt-28 bg-black">
       
-      {/* عکس پانورامیک پس‌زمینه و لایه تیره لوکس */}
-      <div className="absolute inset-0">
+      {/* ۱. عکس پس‌زمینه پانورامیک (تضمین لود کامل) */}
+      <div className="absolute inset-0 z-0">
         <img 
           src={province.images?.hero_cover} 
           alt={localData?.name} 
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/60 to-transparent md:bg-gradient-to-r md:from-[#000000]/90 md:via-[#000000]/40 md:to-transparent" />
+        {/* گرادینت کف برای رسپانسیو موبایل */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent md:hidden" />
       </div>
 
-      {/* کانتینر متنی تراز شده بر اساس جهت زبان صفحه */}
-      <div className={`absolute inset-0 flex flex-col justify-end p-6 sm:p-12 md:p-16 z-10 max-w-3xl ${isRtl ? 'ml-auto text-right md:bg-gradient-to-l md:from-[#000000]/90 md:via-[#000000]/40 md:to-transparent' : 'mr-auto text-left'}`}>
+      {/* ۲. 👑 لایه گرادینت تیره عمیق دوزبانه (اصلاح شده با کدهای رنگی بومی سیستم برای ایجاد شفافیت واقعی) */}
+      <div 
+        className={`absolute inset-0 z-10 pointer-events-none w-full h-full hidden md:block ${
+          isRtl 
+            ? 'bg-gradient-to-l from-black via-black/60 to-transparent' 
+            : 'bg-gradient-to-r from-black via-black/60 to-transparent'
+        }`}
+      />
+
+      {/* ۳. باکس متنی قفل‌شده به کف هیرو با فواصل کاملاً مستقل و پویا */}
+      <div 
+        className={`absolute bottom-8 sm:bottom-16 md:bottom-[8vh] z-20 w-full max-w-3xl px-6 sm:px-12 md:px-16 ${
+          isRtl ? 'right-0 text-right' : 'left-0 text-left'
+        }`}
+      >
         
         {/* بج طلایی بالایی */}
         <span className="text-amovi-gold text-xs sm:text-sm font-bold uppercase tracking-[0.25em] mb-2 block">
           {isRtl ? "ولایت" : "Province"}
         </span>
 
-        {/* عنوان بزرگ طلایی */}
+        {/* عنوان بزرگ طلایی کابل */}
         <h1 
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-amovi-gold leading-tight mb-3 drop-shadow-md"
           style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}
@@ -38,9 +53,9 @@ export default function ProvinceHero({ province, localData, isRtl }) {
           {localData?.tagline}
         </p>
 
-        {/* معرفی کوتاه چند خطی */}
+        {/* معرفی کوتاه چند خطی کابل */}
         <p 
-          className="text-[#E5E5E5] text-sm sm:text-base leading-relaxed mb-8 opacity-85 line-clamp-3 md:line-clamp-none"
+          className="text-[#E5E5E5] text-sm sm:text-base leading-relaxed mb-8 opacity-85 line-clamp-4 md:line-clamp-none max-w-2xl"
           style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}
         >
           {localData?.intro}
@@ -54,7 +69,7 @@ export default function ProvinceHero({ province, localData, isRtl }) {
               const targetSection = document.getElementById("explore-hub");
               if (targetSection) targetSection.scrollIntoView({ behavior: "smooth" });
             }}
-            className="flex items-center gap-3 bg-amovi-gold hover:bg-amber-500 text-amovi-navy font-extrabold py-3.5 px-8 rounded-full shadow-lg transition-all duration-300 transform active:scale-[0.98] cursor-pointer hover:gap-4"
+            className="flex items-center gap-3 bg-amovi-gold hover:bg-amber-500 text-amovi-navy font-extrabold py-3.5 px-8 rounded-full shadow-lg transition-all duration-300 transform active:scale-[0.98] cursor-pointer hover:gap-4 pointer-events-auto"
           >
             <span style={{ fontFamily: isRtl ? 'Sahel, sans-serif' : 'Inter, sans-serif' }}>
               {isRtl ? "مشاهده جاهای دیدنی" : "Explore Sights"}
@@ -62,7 +77,9 @@ export default function ProvinceHero({ province, localData, isRtl }) {
             <span className={`text-base font-bold transition-transform duration-200 ${isRtl ? 'rotate-180' : ''}`}>+</span>
           </button>
         </div>
+
       </div>
     </section>
   );
+
 }

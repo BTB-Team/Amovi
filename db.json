@@ -19,9 +19,9 @@
       "id": "kabul",
       "slug": "kabul",
       "images": {
-        "hero_cover": "/images/provinces/kabul/kabul-hero.webp",
-        "history_img": "/images/provinces/kabul/kabul-history.webp",
-        "culture_img": "/images/provinces/kabul/kabul-culture.webp"
+         "hero_cover": "/Amovi/images/provinces/kabul-hero.webp",
+         "history_img": "/Amovi/images/provinces/kabul-history.webp",
+         "culture_img": "/Amovi/images/provinces/kabul-culture.webp"
       },
       "en": {
         "name": "Kabul",
@@ -74,7 +74,6 @@
     }
   ],
 
-<<<<<<< HEAD
 "tours": [
 
 {
@@ -351,54 +350,6 @@
       "createdAt": "2026-09-28T08:00:00Z"
     }
 ],
-=======
-    "tours": [
-    {
-    "id": "tour-001",
-    "slug": "discover-afghanistan",
-    "fa": {
-    "title": "کشف افغانستان",
-    "description": "یک تجربه سفری اختصاصی در سراسر افغانستان."
-    },
-    "en": {
-    "title": "Discover Afghanistan",
-    "description": "A customized travel experience across Afghanistan."
-    },
-    "destinationIds": [
-    "destination-001",
-    "destination-002",
-    "destination-003"
-    ],
-    "durationDays": 7,
-    "price": 0,
-    "currency": "USD",
-    "image": "",
-    "isActive": true,
-    "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-    "id": "tour-002",
-    "slug": "bamyan-cultural-tour",
-    "fa": {
-    "title": "تور فرهنگی بامیان",
-    "description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید."
-    },
-    "en": {
-    "title": "Bamyan Cultural Tour",
-    "description": "Explore the cultural and natural attractions of Bamyan."
-    },
-    "destinationIds": [
-    "destination-002"
-    ],
-    "durationDays": 3,
-    "price": 0,
-    "currency": "USD",
-    "image": "",
-    "isActive": true,
-    "createdAt": "2026-09-28T08:00:00Z"
-    }
-    ],
->>>>>>> f575163 (kabul data is ready)
 
     "services": [
     {
