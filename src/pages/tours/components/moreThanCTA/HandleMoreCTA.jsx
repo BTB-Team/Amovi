@@ -43,7 +43,7 @@ const HandleMoreCTA = () => {
     <section className="m-auto max-w-[1600px]">
       <div className="px-10 mb-5">
         <p className="text-[var(--color-amovi-gold)]">{moreCTA.eyebrow}</p>
-        <h2 className="mb-2  text-2xl font-semibold text-[var(--color-amovi-navy)] sm:text-3xl md:text-4xl lg:text-5xl">
+        <h2 className="mb-2  text-2xl md:text-[28px] xl:text-[38px] font-semibold text-[var(--color-amovi-navy)] ">
           {moreCTA.title}
         </h2>
       </div>

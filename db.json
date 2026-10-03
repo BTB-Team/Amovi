@@ -77,6 +77,11 @@
 "fa": {
   "title": "کابل؛ تجربه پایتخت",
   "description": "تجربه‌ای از شهر و فرهنگ",
+  "locations": "کابل",
+  "travelStyle": "تجربه شهری و فرهنگی",
+  "package": "معرفی بسته",
+"subtitle": "کابل را کشف کنید",
+"subtitleDescription": "کابل را از طریق بناهای تاریخی، باغ‌ها، بازارهای محلی، میراث فرهنگی و زندگی مدرن شهری آن تجربه کنید. سفری با دقت طراحی‌شده که نگاهی متوازن به ویژگی‌ها و جاذبه‌های پایتخت افغانستان ارائه می‌دهد.",
   "days": "۴",
     "nights": "۳"
 },
@@ -84,6 +89,11 @@
 "en": {
 "title": "Kabul-The Capital Experince",
 "description": "City & Cultural Experince.",
+"locations": "Kabul",
+"travelStyle": "City & Cultural Experience",
+"package": " Package Overview",
+"subtitle": "Discover Kabul",
+"subtitleDescription": "Experience Kabul through its historic landmarks, gardens, local markets, cultural heritage, and modern city life. A carefully designed journey offering a balanced introduction to the character and highlights of Afghanistan's capital.",
  "days": 4,
     "nights": 3 
 },
@@ -93,256 +103,1993 @@
 "destination-003"
 ],
 
-    
+"card": {
+  "fa": {
+    "kabulHeritage": {
+      "title": "میراث کابل",
+      "description": "از قصر دارالامان، قصر تاج‌بیگ و دیگر بناهای تاریخی دیدن کنید."
+    },
+    "localConnection": {
+      "title": "ارتباط با مردم محلی",
+      "description": "با مردم محلی آشنا شوید و مهمان‌نوازی گرم افغان‌ها را تجربه کنید."
+    },
+    "naturalBeauty": {
+      "title": "زیبایی طبیعی",
+      "description": "مناظر زیبا، باغ‌ها، کوه‌ها و محیط‌های آرام و دل‌نشین را کشف کنید."
+    },
+    "cityExperience": {
+      "title": "تجربه شهری",
+      "description": "بازارها، خیابان‌ها، فرهنگ و زندگی مدرن شهری کابل را تجربه کنید."
+    },
+    "afghanCulture": {
+      "title": "فرهنگ افغانستان",
+      "description": "با سنت‌ها، تاریخ، معماری و میراث فرهنگی افغانستان آشنا شوید."
+    },
+    "authenticStay": {
+      "title": "اقامت اصیل",
+      "description": "اقامتی راحت و فضایی صمیمی و دل‌نشین با حال‌وهوای محلی را تجربه کنید."
+    }
+  },
+  "en": {
+    "kabulHeritage": {
+      "title": "Kabul Heritage",
+      "description": "Explore Darulaman Palace, Tajbeg Palace, and other historic landmarks."
+    },
+    "localConnection": {
+      "title": "Local Connection",
+      "description": "Meet local people and experience the warmth of Afghan hospitality."
+    },
+    "naturalBeauty": {
+      "title": "Natural Beauty",
+      "description": "Discover beautiful landscapes, gardens, mountains, and peaceful surroundings."
+    },
+    "cityExperience": {
+      "title": "City Experience",
+      "description": "Experience Kabul's markets, streets, culture, and modern city life."
+    },
+    "afghanCulture": {
+      "title": "Afghan Culture",
+      "description": "Discover Afghanistan's traditions, history, architecture, and cultural heritage."
+    },
+    "authenticStay": {
+      "title": "Authentic Stay",
+      "description": "Experience comfortable accommodation and a welcoming local atmosphere."
+    }
+  }
+},
+
+ "journeyCard": {
+  "fa": {
+    "day01": {
+      "days": "۰۱",
+      "title": "ورود و اولین برداشت‌ها",
+      "description": "ورود به کابل، انتقال از فرودگاه، پذیرش در هتل و آشنایی آرام با شهر.",
+      "experience": "خوش‌آمدگویی • پذیرش هتل • گشت شهری کابل"
+    },
+    "day02": {
+      "days": "۰۲",
+      "title": "میراث کابل",
+      "description": "از قصر دارالامان، قصر تاج‌بیگ، موزیم ملی و شماری از بناهای تاریخی دیدن کنید.",
+      "experience": "تاریخ • معماری • میراث فرهنگی"
+    },
+    "day03": {
+      "days": "۰۳",
+      "title": "باغ‌ها، بازارها و زندگی محلی",
+      "description": "از باغ بابر و چهل‌ستون دیدن کنید، بازارهای سنتی را بگردید و با صنایع دستی، خرید و غذاهای افغانی آشنا شوید.",
+      "experience": "باغ‌ها • بازارها • فرهنگ • غذا"
+    },
+    "day04": {
+      "days": "۰۴",
+      "title": "کابل مدرن و بازگشت",
+      "description": "با بخش‌هایی از کابل مدرن آشنا شوید و پیش از حرکت، زمانی را برای خرید، غذاخوری یا آخرین تجربه شهری اختصاص دهید.",
+      "experience": "کابل مدرن • خرید • غذاخوری • بازگشت"
+    }
+  },
+  "en": {
+    "day01": {
+      "days": "01",
+      "title": "Arrival & First Impressions",
+      "description": "Arrival in Kabul, airport transfer, hotel check-in, and a relaxed introduction to the city.",
+      "experience": "Welcome • Hotel Check-in • Kabul City Drive"
+    },
+    "day02": {
+      "days": "02",
+      "title": "Heritage of Kabul",
+      "description": "Explore Darulaman Palace, Tajbeg Palace, the National Museum, and selected historic landmarks.",
+      "experience": "History • Architecture • Heritage"
+    },
+    "day03": {
+      "days": "03",
+      "title": "Gardens, Markets & Local Life",
+      "description": "Visit Babur's Garden and Chihil Sutun, explore traditional markets, and experience local crafts, shopping, and Afghan cuisine.",
+      "experience": "Gardens • Markets • Culture • Cuisine"
+    },
+    "day04": {
+      "days": "04",
+      "title": "Modern Kabul & Departure",
+      "description": "Discover selected areas of modern Kabul, with time for shopping, dining, or a final city experience before departure.",
+      "experience": "Modern Kabul • Shopping • Dining • Departure"
+    }
+  }
+},
+
+"included": {
+  "fa": {
+    "3 Nights Accommodation": "۳ شب اقامت",
+    "Airport Transfers": "ترانسفر فرودگاهی",
+    "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+    "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+    "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+    "Travel Support": "پشتیبانی سفر"
+  },
+  "en": {
+    "3 Nights Accommodation": "3 Nights Accommodation",
+    "Airport Transfers": "Airport Transfers",
+    "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+    "Professional Local Guide": "Professional Local Guide",
+    "Selected Activities & Visits": "Selected Activities & Visits",
+    "Travel Support": "Travel Support"
+  }
+},
+"notIncluded": {
+  "fa": {
+    "International Flights": "پروازهای بین‌المللی",
+    "Visa Fees": "هزینه ویزا",
+    "Travel Insurance": "بیمه سفر",
+    "Personal Expenses": "هزینه‌های شخصی",
+    "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+    "Additional Activities": "فعالیت‌های اضافی"
+  },
+  "en": {
+    "International Flights": "International Flights",
+    "Visa Fees": "Visa Fees",
+    "Travel Insurance": "Travel Insurance",
+    "Personal Expenses": "Personal Expenses",
+    "Meals Not Specified": "Meals Not Specified",
+    "Additional Activities": "Additional Activities"
+  }
+},
+"importantInformation": {
+  "fa":{
+    "first":"برنامه سفر ممکن است بر اساس دسترسی به مکان‌ها، شرایط محلی، وضعیت آب‌وهوا و ملاحظات اجرایی تغییر کند. جزئیات نهایی بر اساس تاریخ سفر و نیازهای مسافران تأیید خواهد شد."},
+  "en":{
+    "first":"The itinerary may be adjusted according to site accessibility, local conditions, weather, and operational considerations. Final arrangements are confirmed based on travel dates and traveler requirements."}
+},
 
 "price": 0,
 "currency": "USD",
 "image": "tours/images/kabulPictures.webp",
+"heroDetailImage": "tours/images/kandaharPictures.webp",
 "isActive": true,
 "createdAt": "2026-09-28T08:00:00Z"
 },
 
 {
-"id": "tour-002",
-"slug": "bamyan-cultural-tour",
-"fa": {
-"title": "تور فرهنگی بامیان",
-"description": "جاذبه‌های فرهنگی و طبیعی بامیان را کشف کنید.",
-"days": "۴",
-"nights": "۳"
-},
-"en": {
-"title": "Bamyan Cultural Tour",
-"description": "Explore the cultural and natural attractions of Bamyan.",
-"days": 4,
-"nights": 3 
-},
-"destinationIds": [
-"destination-002"
-],
+  "id": "tour-002",
+  "slug": "bamyan-cultural-tour",
 
+  "fa": {
+    "title": "بامیان؛ تجربه‌ای ماندگار",
+    "description": "تجربه‌ای فرهنگی و طبیعی از بامیان",
+    "locations": "بامیان",
+    "travelStyle": "تجربه میراث و طبیعت",
+    "package": "معرفی بسته",
+    "subtitle": "بامیان را کشف کنید",
+    "subtitleDescription": "بامیان را از طریق میراث باستانی، مناظر چشم‌گیر، فرهنگ محلی و زیبایی طبیعی بند امیر تجربه کنید. سفری با دقت طراحی‌شده که تاریخ، طبیعت، فرهنگ و تجربه‌های فراموش‌نشدنی را در کنار هم قرار می‌دهد.",
+    "days": "۴",
+    "nights": "۳"
+  },
 
-"price": 0,
-"currency": "USD",
-"image": "tours/images/bamyanPictures.webp",
-"isActive": true,
-"createdAt": "2026-09-28T08:00:00Z"
+  "en": {
+    "title": "Bamyan: The Timeless Experience",
+    "description": "Heritage & Nature Experience",
+    "locations": "Bamyan",
+    "travelStyle": "Heritage & Nature Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Bamyan",
+    "subtitleDescription": "Experience Bamyan through its ancient heritage, dramatic landscapes, local culture, and the natural beauty of Band-e Amir. A carefully designed journey combining history, nature, culture, and unforgettable experiences.",
+    "days": 4,
+    "nights": 3
+  },
+
+  "destinationIds": [
+    "destination-002"
+  ],
+
+  "card": {
+    "fa": {
+      "buddhasOfBamyan": {
+        "title": "بوداهای بامیان",
+        "description": "از محوطه باستان‌شناسی مشهور بامیان و غارهای تاریخی آن دیدن کنید."
+      },
+      "bandEAmir": {
+        "title": "بند امیر",
+        "description": "دریاچه‌های آبی شگفت‌انگیز و مناظر کوهستانی افغانستان را تجربه کنید."
+      },
+      "gholgholaCity": {
+        "title": "شهر غلغله",
+        "description": "ویرانه‌های تاریخی شهر غلغله را که بر فراز دره بامیان قرار دارد، کشف کنید."
+      },
+      "bamyanValley": {
+        "title": "دره بامیان",
+        "description": "از مناظر چشم‌گیر و چشم‌اندازهای پانورامای کوهستانی لذت ببرید."
+      },
+      "localCulture": {
+        "title": "فرهنگ محلی",
+        "description": "سنت‌ها، مهمان‌نوازی و زندگی روزمره مردم محلی را تجربه کنید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاخوری محلی و طعم‌های سنتی لذت ببرید."
+      },
+      "natureAdventure": {
+        "title": "طبیعت و ماجراجویی",
+        "description": "از فعالیت‌های فصلی در فضای باز و تجربه‌های منحصربه‌فرد طبیعی لذت ببرید."
+      }
+    },
+
+    "en": {
+      "buddhasOfBamyan": {
+        "title": "Buddhas of Bamyan",
+        "description": "Discover Bamyan’s iconic archaeological site and ancient caves."
+      },
+      "bandEAmir": {
+        "title": "Band-e Amir",
+        "description": "Experience Afghanistan’s spectacular blue lakes and mountain landscapes."
+      },
+      "gholgholaCity": {
+        "title": "Gholghola City",
+        "description": "Explore the historic ruins overlooking Bamyan Valley."
+      },
+      "bamyanValley": {
+        "title": "Bamyan Valley",
+        "description": "Enjoy dramatic landscapes and panoramic mountain views."
+      },
+      "localCulture": {
+        "title": "Local Culture",
+        "description": "Experience local traditions, hospitality, and everyday life."
+      },
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      },
+      "natureAdventure": {
+        "title": "Nature & Adventure",
+        "description": "Enjoy seasonal outdoor activities and unique natural experiences."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود و دره بامیان",
+        "description": "ورود به بامیان، پذیرش در هتل و آشنایی با دره و مناظر اطراف آن.",
+        "experience": "ورود • چشم‌اندازهای دره • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "میراث بامیان",
+        "description": "از بوداهای بامیان، غارهای باستانی، شهر غلغله و شماری از مکان‌های تاریخی دیدن کنید.",
+        "experience": "میراث • تاریخ • باستان‌شناسی"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "بند امیر",
+        "description": "به پارک ملی بند امیر سفر کنید و از دریاچه‌های شگفت‌انگیز، کوه‌ها و مناظر طبیعی آن لذت ببرید.",
+        "experience": "طبیعت • دریاچه‌ها • کوه‌ها"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "تجربه محلی و بازگشت",
+        "description": "از یک تجربه محلی نهایی در بامیان لذت ببرید و پیش از بازگشت زمانی را برای عکاسی، خرید یا فعالیت‌های فصلی اختصاص دهید.",
+        "experience": "فرهنگ محلی • خرید • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival & Bamyan Valley",
+        "description": "Arrival in Bamyan, hotel check-in, and an introduction to the valley and its surrounding landscapes.",
+        "experience": "Arrival • Valley Views • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Heritage of Bamyan",
+        "description": "Explore the Buddhas of Bamyan, ancient caves, Gholghola City, and selected historical sites.",
+        "experience": "Heritage • History • Archaeology"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Band-e Amir",
+        "description": "Travel to Band-e Amir National Park and experience its spectacular lakes, mountains, and natural scenery.",
+        "experience": "Nature • Lakes • Mountains"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Local Experience & Departure",
+        "description": "Enjoy a final local experience in Bamyan, with time for photography, shopping, or seasonal activities before departure.",
+        "experience": "Local Culture • Shopping • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "3 Nights Accommodation": "۳ شب اقامت",
+      "Airport Transfers": "ترانسفر فرودگاهی",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "3 Nights Accommodation": "3 Nights Accommodation",
+      "Airport Transfers": "Airport Transfers",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس دسترسی به مکان‌ها، وضعیت آب‌وهوا، شرایط محلی و فعالیت‌های فصلی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to site accessibility, weather, local conditions, and seasonal activities."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/bamyanPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+  {
+  "id": "tour-003",
+  "slug": "herat-heritage-experience",
+
+  "fa": {
+    "title": "هرات؛ تجربه میراث فرهنگی",
+    "description": "تجربه‌ای از میراث تاریخی و فرهنگی هرات.",
+    "locations": "هرات",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "هرات را کشف کنید",
+    "subtitleDescription": "هرات را از طریق معماری چشم‌گیر، میراث باستانی، فرهنگ پویا و فضای ماندگار شهری آن تجربه کنید. سفری با دقت طراحی‌شده در یکی از تاریخی‌ترین و فرهنگی‌ترین شهرهای افغانستان.",
+    "days": "۳",
+    "nights": "۲"
+  },
+
+  "en": {
+    "title": "Herat: The Heritage Experience",
+    "description": "Experience the historical and cultural heritage of Herat.",
+    "locations": "Herat",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Herat",
+    "subtitleDescription": "Experience Herat through its remarkable architecture, ancient heritage, vibrant culture, and timeless city atmosphere. A carefully designed journey through one of Afghanistan’s most historic and culturally significant cities.",
+    "days": 3,
+    "nights": 2
+  },
+
+  "destinationIds": [
+    "destination-004"
+  ],
+
+  "card": {
+    "fa": {
+      "heratCitadel": {
+        "title": "قلعه هرات",
+        "description": "از قلعه تاریخی و نمادین شهر هرات دیدن کنید."
+      },
+      "fridayMosque": {
+        "title": "مسجد جامع هرات",
+        "description": "یکی از برجسته‌ترین بناهای معماری تاریخی هرات را کشف کنید."
+      },
+      "heratMuseum": {
+        "title": "موزیم هرات",
+        "description": "با شماری از گنجینه‌های تاریخی و فرهنگی غنی منطقه آشنا شوید."
+      },
+      "musallaComplex": {
+        "title": "مجموعه مصلی",
+        "description": "بقایای میراث معماری تاریخی و ارزشمند هرات را کشف کنید."
+      },
+      "historicCity": {
+        "title": "شهر تاریخی",
+        "description": "کوچه‌های سنتی، بازارها و زندگی محلی هرات را تجربه کنید."
+      },
+      "heratCulture": {
+        "title": "فرهنگ هرات",
+        "description": "با سنت‌های محلی، صنایع دستی و مهمان‌نوازی افغان‌ها آشنا شوید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاخوری محلی و طعم‌های سنتی لذت ببرید."
+      }
+    },
+
+    "en": {
+      "heratCitadel": {
+        "title": "Herat Citadel",
+        "description": "Explore the city's iconic historic fortress."
+      },
+      "fridayMosque": {
+        "title": "Friday Mosque",
+        "description": "Discover one of Herat's most remarkable architectural landmarks."
+      },
+      "heratMuseum": {
+        "title": "Herat Museum",
+        "description": "Explore selected treasures from the region's rich history."
+      },
+      "musallaComplex": {
+        "title": "Musalla Complex",
+        "description": "Discover the remains of Herat's historic architectural heritage."
+      },
+      "historicCity": {
+        "title": "Historic City",
+        "description": "Experience traditional streets, markets, and local life."
+      },
+      "heratCulture": {
+        "title": "Herat Culture",
+        "description": "Discover local traditions, crafts, and Afghan hospitality."
+      },
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود و اولین برداشت‌ها",
+        "description": "ورود به هرات، پذیرش در هتل و آشنایی با مرکز تاریخی شهر و فضای محلی آن.",
+        "experience": "ورود • چشم‌اندازهای شهر • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "میراث هرات",
+        "description": "از قلعه هرات، مسجد جامع، موزیم هرات و شماری از بناهای تاریخی دیدن کنید.",
+        "experience": "تاریخ • معماری • میراث"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "فرهنگ، بازارها و بازگشت",
+        "description": "مجموعه مصلی و شماری از بازارهای سنتی را کشف کنید و زمانی را برای خرید محلی، غذا و آخرین تجربه شهری پیش از بازگشت اختصاص دهید.",
+        "experience": "فرهنگ • بازارها • غذا • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival & First Impressions",
+        "description": "Arrival in Herat, hotel check-in, and an introduction to the city's historic center and local atmosphere.",
+        "experience": "Arrival • City Views • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Heritage of Herat",
+        "description": "Explore Herat Citadel, the Friday Mosque, Herat Museum, and selected historic landmarks.",
+        "experience": "History • Architecture • Heritage"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Culture, Markets & Departure",
+        "description": "Discover the Musalla Complex and selected traditional markets, with time for local shopping, cuisine, and a final city experience before departure.",
+        "experience": "Culture • Markets • Cuisine • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "2 Nights Accommodation": "۲ شب اقامت",
+      "Airport Transfers": "ترانسفر فرودگاهی",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "2 Nights Accommodation": "2 Nights Accommodation",
+      "Airport Transfers": "Airport Transfers",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس دسترسی به مکان‌ها، شرایط محلی، وضعیت آب‌وهوا و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to site accessibility, local conditions, weather, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/heratPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
 },
    {
-      "id": "tour-003",
-      "slug": "herat-heritage-experience",
-      "fa": {
-        "title": "هرات؛ تجربه میراث فرهنگی",
-        "description": "تجربه‌ای از میراث تاریخی و فرهنگی هرات.",
-        "days": "۳",
-        "nights": "۲",
-        "travelStyle": "تجربه میراث و فرهنگ"
+  "id": "tour-004",
+  "slug": "mazar-balkh-timeless-legacy",
+
+  "fa": {
+    "title": "مزار شریف و بلخ؛ میراث جاودانه",
+    "description": "سفری برای کشف میراث تاریخی و فرهنگی مزار شریف و بلخ.",
+    "locations": "مزار شریف و بلخ",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "شمال افغانستان را کشف کنید",
+    "subtitleDescription": "قلب فرهنگی شمال افغانستان را از طریق مکان‌های مقدس، میراث باستانی، بناهای تاریخی، بازارهای محلی و زندگی پویای شهری تجربه کنید. سفری با دقت طراحی‌شده که فضای مزار شریف را با میراث باستانی بلخ پیوند می‌دهد.",
+    "days": "۳",
+    "nights": "۲"
+  },
+
+  "en": {
+    "title": "Mazar-i-Sharif & Balkh: The Timeless Legacy",
+    "description": "Discover the historical and cultural heritage of Mazar-i-Sharif and Balkh.",
+    "locations": "Mazar-i-Sharif & Balkh",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover the North",
+    "subtitleDescription": "Experience the cultural heart of northern Afghanistan through sacred landmarks, ancient heritage, historic sites, local markets, and vibrant city life. A carefully designed journey connecting the atmosphere of Mazar-i-Sharif with the ancient heritage of Balkh.",
+    "days": 3,
+    "nights": 2
+  },
+
+  "destinationIds": [
+    "destination-005",
+    "destination-006"
+  ],
+
+  "card": {
+    "fa": {
+      "blueMosque": {
+        "title": "مسجد کبود",
+        "description": "زیارتگاه نمادین و یکی از برجسته‌ترین بناهای معماری مزار شریف را تجربه کنید."
       },
-      "en": {
-        "title": "Herat: The Heritage Experience",
-        "description": "Experience the historical and cultural heritage of Herat.",
-        "days": 3,
-        "nights": 2,
-        "travelStyle": "Heritage & Cultural Experience"
+      "balkhAncientCity": {
+        "title": "شهر باستانی بلخ",
+        "description": "قلب تاریخی یکی از کهن‌ترین مناطق فرهنگی افغانستان را کشف کنید."
       },
-      "destinationIds": [
-        "destination-004"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/heratPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
+      "balkhHeritage": {
+        "title": "میراث بلخ",
+        "description": "از شماری از مکان‌های باستان‌شناسی و تاریخی بلخ دیدن کنید."
+      },
+      "localMarkets": {
+        "title": "بازارهای محلی",
+        "description": "محصولات سنتی، صنایع دستی و زندگی محلی را کشف کنید."
+      },
+      "mazarCity": {
+        "title": "شهر مزار",
+        "description": "فضا، مهمان‌نوازی و زندگی روزمره شهر مزار شریف را تجربه کنید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاخوری محلی و طعم‌های سنتی لذت ببرید."
+      }
     },
-    {
-      "id": "tour-004",
-      "slug": "mazar-balkh-timeless-legacy",
-      "fa": {
-        "title": "مزار شریف و بلخ؛ میراث جاودانه",
-        "description": "سفری برای کشف میراث تاریخی و فرهنگی مزار شریف و بلخ.",
-        "days": "۳",
-        "nights": "۲",
-        "travelStyle": "تجربه میراث و فرهنگ"
+
+    "en": {
+      "blueMosque": {
+        "title": "Blue Mosque",
+        "description": "Experience the iconic shrine and architectural landmark of Mazar-i-Sharif."
       },
-      "en": {
-        "title": "Mazar-i-Sharif & Balkh: The Timeless Legacy",
-        "description": "Discover the historical and cultural heritage of Mazar-i-Sharif and Balkh.",
-        "days": 3,
-        "nights": 2,
-        "travelStyle": "Heritage & Cultural Experience"
+      "balkhAncientCity": {
+        "title": "Balkh Ancient City",
+        "description": "Discover the historic heart of one of Afghanistan's oldest cultural regions."
       },
-      "destinationIds": [
-        "destination-005",
-        "destination-006"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/mazarPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-005",
-      "slug": "kandahar-historic-heart",
-      "fa": {
-        "title": "قندهار؛ قلب تاریخی",
-        "description": "تجربه‌ای از تاریخ و فرهنگ شهر تاریخی قندهار.",
-        "days": "۳",
-        "nights": "۲",
-        "travelStyle": "تجربه میراث و فرهنگ"
+      "balkhHeritage": {
+        "title": "Balkh Heritage",
+        "description": "Explore selected archaeological and historical sites."
       },
-      "en": {
-        "title": "Kandahar: The Historic Heart",
-        "description": "Experience the history and culture of the historic city of Kandahar.",
-        "days": 3,
-        "nights": 2,
-        "travelStyle": "Heritage & Cultural Experience"
+      "localMarkets": {
+        "title": "Local Markets",
+        "description": "Discover traditional products, crafts, and local life."
       },
-      "destinationIds": [
-        "destination-007"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/kandaharPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-006",
-      "slug": "nuristan-untamed-experience",
-      "fa": {
-        "title": "نورستان؛ تجربه طبیعت بکر",
-        "description": "سفری ماجراجویانه برای کشف طبیعت بکر و چشم‌اندازهای نورستان.",
-        "days": "۵",
-        "nights": "۴",
-        "travelStyle": "تجربه طبیعت و ماجراجویی"
+      "mazarCity": {
+        "title": "Mazar City",
+        "description": "Experience the atmosphere, hospitality, and daily life of the city."
       },
-      "en": {
-        "title": "Nuristan: The Untamed Experience",
-        "description": "An adventurous journey through the untouched nature and landscapes of Nuristan.",
-        "days": 5,
-        "nights": 4,
-        "travelStyle": "Nature & Adventure Experience"
-      },
-      "destinationIds": [
-        "destination-008"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/noristanPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-007",
-      "slug": "kabul-bamyan-ghazni",
-      "fa": {
-        "title": "کابل → بامیان → غزنی",
-        "description": "سفری برای کشف میراث تاریخی و طبیعت افغانستان.",
-        "days": "۶",
-        "nights": "۵",
-        "travelStyle": "تجربه میراث و طبیعت"
-      },
-      "en": {
-        "title": "Kabul → Bamyan → Ghazni",
-        "description": "A journey through Afghanistan's historical heritage and natural landscapes.",
-        "days": 6,
-        "nights": 5,
-        "travelStyle": "Heritage & Nature Experience"
-      },
-      "destinationIds": [
-        "destination-001",
-        "destination-002",
-        "destination-009"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/kabulPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-008",
-      "slug": "kandahar-helmand",
-      "fa": {
-        "title": "قندهار → هلمند",
-        "description": "سفری برای کشف میراث تاریخی و فرهنگی جنوب افغانستان.",
-        "days": "۴",
-        "nights": "۳",
-        "travelStyle": "تجربه میراث و فرهنگ"
-      },
-      "en": {
-        "title": "Kandahar → Helmand",
-        "description": "Explore the historical and cultural heritage of southern Afghanistan.",
-        "days": 4,
-        "nights": 3,
-        "travelStyle": "Heritage & Cultural Experience"
-      },
-      "destinationIds": [
-        "destination-007",
-        "destination-010"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/kandaharPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-009",
-      "slug": "herat-ghor",
-      "fa": {
-        "title": "هرات → غور",
-        "description": "سفری برای کشف میراث تاریخی و فرهنگی هرات و غور.",
-        "days": "۵",
-        "nights": "۴",
-        "travelStyle": "تجربه میراث و فرهنگ"
-      },
-      "en": {
-        "title": "Herat → Ghor",
-        "description": "Discover the historical and cultural heritage of Herat and Ghor.",
-        "days": 5,
-        "nights": 4,
-        "travelStyle": "Heritage & Cultural Experience"
-      },
-      "destinationIds": [
-        "destination-004",
-        "destination-011"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/ghorPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
-    },
-    {
-      "id": "tour-010",
-      "slug": "mazar-balkh-samangan",
-      "fa": {
-        "title": "مزار شریف → بلخ → سمنگان",
-        "description": "سفری برای کشف میراث تاریخی و فرهنگی شمال افغانستان.",
-        "days": "۵",
-        "nights": "۴",
-        "travelStyle": "تجربه میراث و فرهنگ"
-      },
-      "en": {
-        "title": "Mazar-i-Sharif → Balkh → Samangan",
-        "description": "Explore the historical and cultural heritage of northern Afghanistan.",
-        "days": 5,
-        "nights": 4,
-        "travelStyle": "Heritage & Cultural Experience"
-      },
-      "destinationIds": [
-        "destination-005",
-        "destination-006",
-        "destination-012"
-      ],
-      "price": 0,
-      "currency": "USD",
-      "image": "tours/images/mazarPictures.webp",
-      "isActive": true,
-      "createdAt": "2026-09-28T08:00:00Z"
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      }
     }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود و مزار شریف",
+        "description": "ورود به مزار شریف، پذیرش در هتل و نخستین تجربه از شهر، شامل مسجد کبود و شماری از مناطق محلی.",
+        "experience": "ورود • میراث • زندگی شهری"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "کشف بلخ باستان",
+        "description": "به بلخ سفر کنید و از شماری از مکان‌های تاریخی و باستان‌شناسی دیدن کنید و سپس به مزار شریف بازگردید.",
+        "experience": "تاریخ باستان • باستان‌شناسی • میراث"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "زندگی محلی و بازگشت",
+        "description": "از یک تجربه نهایی در مزار شریف لذت ببرید و زمانی را برای بازارهای محلی، خرید یا غذاخوری پیش از بازگشت اختصاص دهید.",
+        "experience": "بازارها • فرهنگ • غذا • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival & Mazar-i-Sharif",
+        "description": "Arrival in Mazar-i-Sharif, hotel check-in, and a first experience of the city, including the Blue Mosque and selected local areas.",
+        "experience": "Arrival • Heritage • City Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Discover Ancient Balkh",
+        "description": "Travel to Balkh and explore selected historical and archaeological sites before returning to Mazar-i-Sharif.",
+        "experience": "Ancient History • Archaeology • Heritage"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Local Life & Departure",
+        "description": "Enjoy a final Mazar-i-Sharif experience, with time for local markets, shopping, or dining before departure.",
+        "experience": "Markets • Culture • Cuisine • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "2 Nights Accommodation": "۲ شب اقامت",
+      "Airport Transfers": "ترانسفر فرودگاهی",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "2 Nights Accommodation": "2 Nights Accommodation",
+      "Airport Transfers": "Airport Transfers",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس دسترسی به مکان‌ها، شرایط محلی، وضعیت آب‌وهوا و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to site accessibility, local conditions, weather, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/mazarPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},{
+  "id": "tour-005",
+  "slug": "kandahar-historic-heart",
+
+  "fa": {
+    "title": "قندهار؛ قلب تاریخی",
+    "description": "تجربه‌ای از تاریخ و فرهنگ شهر تاریخی قندهار.",
+    "locations": "قندهار",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "قندهار را کشف کنید",
+    "subtitleDescription": "قندهار را از طریق بناهای تاریخی، میراث فرهنگی، بازارهای سنتی و ویژگی‌های منحصربه‌فرد زندگی محلی آن تجربه کنید. سفری با دقت طراحی‌شده در یکی از شهرهای تاریخی و مهم افغانستان.",
+    "days": "۳",
+    "nights": "۲"
+  },
+
+  "en": {
+    "title": "Kandahar: The Historic Heart",
+    "description": "Experience the history and culture of the historic city of Kandahar.",
+    "locations": "Kandahar",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Kandahar",
+    "subtitleDescription": "Experience Kandahar through its historic landmarks, cultural heritage, traditional markets, and distinctive local character. A carefully designed journey through one of Afghanistan’s most historically significant cities.",
+    "days": 3,
+    "nights": 2
+  },
+
+  "destinationIds": [
+    "destination-007"
+  ],
+
+  "card": {
+    "fa": {
+      "kandaharHeritage": {
+        "title": "میراث قندهار",
+        "description": "بناها و مکان‌های مرتبط با تاریخ طولانی و غنی شهر قندهار را کشف کنید."
+      },
+      "ahmadShahDurraniMausoleum": {
+        "title": "مقبره احمدشاه درانی",
+        "description": "از یکی از مکان‌های تاریخی مهم قندهار دیدن کنید."
+      },
+      "kandaharMuseum": {
+        "title": "موزیم قندهار",
+        "description": "با بخش‌هایی از میراث فرهنگی غنی منطقه آشنا شوید."
+      },
+      "oldCityMarkets": {
+        "title": "شهر قدیم و بازارها",
+        "description": "بازارهای سنتی، صنایع دستی و زندگی محلی را تجربه کنید."
+      },
+      "historicSites": {
+        "title": "مکان‌های تاریخی",
+        "description": "شماری از بناها و مکان‌های دارای اهمیت تاریخی را کشف کنید."
+      },
+      "localCulture": {
+        "title": "فرهنگ محلی",
+        "description": "سنت‌های قندهاری، مهمان‌نوازی و زندگی روزمره مردم محلی را تجربه کنید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاخوری محلی و طعم‌های سنتی لذت ببرید."
+      }
+    },
+
+    "en": {
+      "kandaharHeritage": {
+        "title": "Kandahar Heritage",
+        "description": "Discover landmarks connected to the city's long history."
+      },
+      "ahmadShahDurraniMausoleum": {
+        "title": "Ahmad Shah Durrani Mausoleum",
+        "description": "Visit one of Kandahar's important historical landmarks."
+      },
+      "kandaharMuseum": {
+        "title": "Kandahar Museum",
+        "description": "Explore selected aspects of the region's cultural heritage."
+      },
+      "oldCityMarkets": {
+        "title": "Old City & Markets",
+        "description": "Experience traditional markets, crafts, and local life."
+      },
+      "historicSites": {
+        "title": "Historic Sites",
+        "description": "Discover selected landmarks and places of historical importance."
+      },
+      "localCulture": {
+        "title": "Local Culture",
+        "description": "Experience Kandahari traditions, hospitality, and daily life."
+      },
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود و اولین برداشت‌ها",
+        "description": "ورود به قندهار، پذیرش در هتل و آشنایی با فضای شهر و شماری از مناطق محلی.",
+        "experience": "ورود • زندگی شهری • فرهنگ محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "میراث قندهار",
+        "description": "از شماری از بناهای تاریخی، مقبره احمدشاه درانی، موزیم قندهار و مکان‌های مهم مرتبط با تاریخ شهر دیدن کنید.",
+        "experience": "تاریخ • میراث • معماری"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "بازارها، فرهنگ و بازگشت",
+        "description": "بازارهای سنتی و زندگی محلی را کشف کنید و زمانی را برای خرید، غذاخوری و آخرین تجربه قندهار پیش از بازگشت اختصاص دهید.",
+        "experience": "بازارها • فرهنگ • غذا • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival & First Impressions",
+        "description": "Arrival in Kandahar, hotel check-in, and an introduction to the city's atmosphere and selected local areas.",
+        "experience": "Arrival • City Life • Local Culture"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Heritage of Kandahar",
+        "description": "Explore selected historic landmarks, the Ahmad Shah Durrani Mausoleum, Kandahar Museum, and important sites connected to the city's history.",
+        "experience": "History • Heritage • Architecture"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Markets, Culture & Departure",
+        "description": "Discover traditional markets and local life, with time for shopping, dining, and a final Kandahar experience before departure.",
+        "experience": "Markets • Culture • Cuisine • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "2 Nights Accommodation": "۲ شب اقامت",
+      "Airport Transfers": "ترانسفر فرودگاهی",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "2 Nights Accommodation": "2 Nights Accommodation",
+      "Airport Transfers": "Airport Transfers",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس دسترسی به مکان‌ها، شرایط محلی، وضعیت آب‌وهوا و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to site accessibility, local conditions, weather, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/kandaharPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+    {
+  "id": "tour-006",
+  "slug": "nuristan-untamed-experience",
+
+  "fa": {
+    "title": "نورستان؛ تجربه طبیعت بکر",
+    "description": "سفری ماجراجویانه برای کشف طبیعت بکر و چشم‌اندازهای نورستان.",
+    "locations": "نورستان",
+    "travelStyle": "تجربه طبیعت و ماجراجویی",
+    "package": "معرفی بسته",
+    "subtitle": "نورستان را کشف کنید",
+    "subtitleDescription": "وارد مناظر بکر نورستان شوید؛ جایی که کوه‌های ناهموار، دره‌های عمیق، جنگل‌ها و سنت‌های محلی، تجربه‌ای متفاوت از افغانستان را شکل می‌دهند. سفری با تمرکز بر طبیعت، مناظر، فرهنگ محلی و روحیه ماجراجویی.",
+    "days": "۵",
+    "nights": "۴"
+  },
+
+  "en": {
+    "title": "Nuristan: The Untamed Experience",
+    "description": "An adventurous journey through the untouched nature and landscapes of Nuristan.",
+    "locations": "Nuristan",
+    "travelStyle": "Nature & Adventure Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Nuristan",
+    "subtitleDescription": "Step into the untouched landscapes of Nuristan, where rugged mountains, deep valleys, forests, and local traditions create a truly different Afghan experience. A carefully designed journey focused on nature, landscapes, local culture, and the spirit of exploration.",
+    "days": 5,
+    "nights": 4
+  },
+
+  "destinationIds": [
+    "destination-008"
+  ],
+
+  "card": {
+    "fa": {
+      "mountainLandscapes": {
+        "title": "مناظر کوهستانی",
+        "description": "دره‌های چشم‌گیر و مناظر کوهستانی ناهموار را تجربه کنید."
+      },
+      "untouchedNature": {
+        "title": "طبیعت بکر",
+        "description": "جنگل‌ها، رودخانه‌ها و مناظر طبیعی دورافتاده را کشف کنید."
+      },
+      "villageLife": {
+        "title": "زندگی روستایی",
+        "description": "فضا و سنت‌های جوامع محلی را تجربه کنید."
+      },
+      "scenicRoutes": {
+        "title": "مسیرهای دیدنی",
+        "description": "از میان برخی از چشم‌گیرترین مناظر کوهستانی افغانستان سفر کنید."
+      },
+      "localCulture": {
+        "title": "فرهنگ محلی",
+        "description": "با سنت‌های نورستانی، مهمان‌نوازی و زندگی روزمره مردم محلی آشنا شوید."
+      },
+      "outdoorExperience": {
+        "title": "تجربه در فضای باز",
+        "description": "از عکاسی، پیاده‌روی در طبیعت و فعالیت‌های فصلی در فضای باز لذت ببرید."
+      }
+    },
+
+    "en": {
+      "mountainLandscapes": {
+        "title": "Mountain Landscapes",
+        "description": "Experience dramatic valleys and rugged mountain scenery."
+      },
+      "untouchedNature": {
+        "title": "Untouched Nature",
+        "description": "Discover forests, rivers, and remote natural landscapes."
+      },
+      "villageLife": {
+        "title": "Village Life",
+        "description": "Experience the atmosphere and traditions of local communities."
+      },
+      "scenicRoutes": {
+        "title": "Scenic Routes",
+        "description": "Travel through some of Afghanistan's most striking mountain landscapes."
+      },
+      "localCulture": {
+        "title": "Local Culture",
+        "description": "Discover Nuristani traditions, hospitality, and everyday life."
+      },
+      "outdoorExperience": {
+        "title": "Outdoor Experience",
+        "description": "Enjoy photography, nature walks, and seasonal outdoor activities."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود به نورستان",
+        "description": "سفر به سوی نورستان را آغاز کنید، وارد منطقه شوید و در محیط کوهستانی اطراف مستقر شوید.",
+        "experience": "جاده‌های کوهستانی • مناظر • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "دره‌ها و مناظر کوهستانی",
+        "description": "دره‌ها، جنگل‌ها، رودخانه‌ها و مناظر دیدنی اطراف را کشف کنید و از فرصت‌های عکاسی و پیاده‌روی در طبیعت لذت ببرید.",
+        "experience": "طبیعت • کوه‌ها • اکتشاف"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "زندگی و فرهنگ محلی",
+        "description": "جوامع محلی، سنت‌ها و ویژگی‌های منحصربه‌فرد نورستان را کشف کنید.",
+        "experience": "فرهنگ • روستاها • مهمان‌نوازی"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "در دل طبیعت",
+        "description": "یک روز دیگر را در میان مناظر طبیعی نورستان سپری کنید و زمانی را برای اکتشاف، عکاسی و فعالیت‌های فصلی در فضای باز اختصاص دهید.",
+        "experience": "طبیعت • ماجراجویی • عکاسی"
+      },
+      "day05": {
+        "days": "۰۵",
+        "title": "آخرین چشم‌اندازها و بازگشت",
+        "description": "از آخرین تجربه خود در کوهستان لذت ببرید و سپس سفر بازگشت را آغاز کنید.",
+        "experience": "مناظر • زندگی محلی • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Into Nuristan",
+        "description": "Begin the journey toward Nuristan, arriving in the region and settling into the surrounding mountain environment.",
+        "experience": "Mountain Roads • Landscapes • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Valleys & Mountain Landscapes",
+        "description": "Explore the surrounding valleys, forests, rivers, and scenic landscapes with opportunities for photography and nature walks.",
+        "experience": "Nature • Mountains • Exploration"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Local Life & Culture",
+        "description": "Discover local communities, traditions, and the distinctive character of Nuristan.",
+        "experience": "Culture • Villages • Hospitality"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Into the Wild",
+        "description": "Experience another day among Nuristan's natural landscapes, with time for exploration, photography, and seasonal outdoor activities.",
+        "experience": "Nature • Adventure • Photography"
+      },
+      "day05": {
+        "days": "05",
+        "title": "Final Views & Departure",
+        "description": "Enjoy a final experience in the mountains before beginning the journey back.",
+        "experience": "Landscapes • Local Life • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "4 Nights Accommodation": "۴ شب اقامت",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "4 Nights Accommodation": "4 Nights Accommodation",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس وضعیت جاده‌ها، شرایط آب‌وهوا، دسترسی به مکان‌ها، شرایط محلی و ملاحظات فصلی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to road conditions, weather, site accessibility, local conditions, and seasonal considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/noristanPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+    {
+  "id": "tour-007",
+  "slug": "kabul-bamyan-ghazni",
+
+  "fa": {
+    "title": "کابل → بامیان → غزنی",
+    "description": "سفری برای کشف میراث تاریخی و طبیعت افغانستان.",
+    "locations": "کابل • بامیان • غزنی",
+    "travelStyle": "تجربه میراث و طبیعت",
+    "package": "معرفی بسته",
+    "subtitle": "افغانستان مرکزی را کشف کنید",
+    "subtitleDescription": "ویژگی‌های متنوع افغانستان مرکزی را در سفری تجربه کنید که پایتخت، مناظر بامیان و میراث تاریخی غزنی را به هم پیوند می‌دهد. مسیری با دقت طراحی‌شده که فرهنگ، تاریخ، طبیعت و تجربه‌های محلی را در کنار هم قرار می‌دهد.",
+    "days": "۶",
+    "nights": "۵"
+  },
+
+  "en": {
+    "title": "Kabul → Bamyan → Ghazni",
+    "description": "A journey through Afghanistan's historical heritage and natural landscapes.",
+    "locations": "Kabul • Bamyan • Ghazni",
+    "travelStyle": "Heritage & Nature Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Central Afghanistan",
+    "subtitleDescription": "Experience the diverse character of central Afghanistan through a journey connecting the capital, the landscapes of Bamyan, and the historic heritage of Ghazni. A carefully designed route combining culture, history, nature, and local experiences.",
+    "days": 6,
+    "nights": 5
+  },
+
+  "destinationIds": [
+    "destination-001",
+    "destination-002",
+    "destination-009"
+  ],
+
+  "card": {
+    "fa": {
+      "kabul": {
+        "title": "کابل",
+        "description": "فرهنگ و زندگی شهری پایتخت افغانستان را تجربه کنید."
+      },
+      "bamyan": {
+        "title": "بامیان",
+        "description": "میراث باستانی و مناظر چشم‌گیر کوهستانی بامیان را کشف کنید."
+      },
+      "bandEAmir": {
+        "title": "بند امیر",
+        "description": "دریاچه‌های آبی و مناظر کوهستانی شگفت‌انگیز افغانستان را تجربه کنید."
+      },
+      "gholgholaCity": {
+        "title": "شهر غلغله",
+        "description": "ویرانه‌های تاریخی مشرف بر دره بامیان را کشف کنید."
+      },
+      "ghazniHeritage": {
+        "title": "میراث غزنی",
+        "description": "از بناهای تاریخی منتخب و میراث معماری غزنی دیدن کنید."
+      },
+      "localExperiences": {
+        "title": "تجربه‌های محلی",
+        "description": "مهمان‌نوازی، غذاهای افغانی و زندگی روزمره مردم محلی را تجربه کنید."
+      }
+    },
+
+    "en": {
+      "kabul": {
+        "title": "Kabul",
+        "description": "Experience the capital's culture and city life."
+      },
+      "bamyan": {
+        "title": "Bamyan",
+        "description": "Discover ancient heritage and dramatic mountain landscapes."
+      },
+      "bandEAmir": {
+        "title": "Band-e Amir",
+        "description": "Experience Afghanistan's spectacular blue lakes and mountain scenery."
+      },
+      "gholgholaCity": {
+        "title": "Gholghola City",
+        "description": "Explore the historic ruins overlooking Bamyan Valley."
+      },
+      "ghazniHeritage": {
+        "title": "Ghazni Heritage",
+        "description": "Discover selected historic landmarks and architectural heritage."
+      },
+      "localExperiences": {
+        "title": "Local Experiences",
+        "description": "Experience Afghan hospitality, cuisine, and everyday life."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود به کابل",
+        "description": "ورود به کابل، انتقال از فرودگاه، پذیرش در هتل و آشنایی آرام با شهر.",
+        "experience": "ورود • کابل • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "کابل → بامیان",
+        "description": "از کابل به سوی بامیان از میان مناظر زیبای کوهستانی سفر کنید و پس از رسیدن، با محیط محلی بامیان آشنا شوید.",
+        "experience": "سفر دیدنی • کوه‌ها • بامیان"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "کشف بامیان",
+        "description": "از بوداهای بامیان، غارهای باستانی، شهر غلغله و شماری از مکان‌های تاریخی دیدن کنید.",
+        "experience": "میراث • باستان‌شناسی • تاریخ"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "بند امیر",
+        "description": "به پارک ملی بند امیر سفر کنید و از دریاچه‌های شگفت‌انگیز و مناظر کوهستانی آن لذت ببرید.",
+        "experience": "طبیعت • دریاچه‌ها • کوه‌ها"
+      },
+      "day05": {
+        "days": "۰۵",
+        "title": "بامیان → غزنی",
+        "description": "به سوی غزنی سفر کنید و مناظر متغیر مسیر را تجربه کنید. پس از رسیدن به غزنی، از بخش‌های منتخب شهر دیدن کنید.",
+        "experience": "سفر دیدنی • زندگی محلی • غزنی"
+      },
+      "day06": {
+        "days": "۰۶",
+        "title": "کشف غزنی و بازگشت",
+        "description": "پیش از ادامه مسیر یا آغاز سفر بازگشت، از بناهای تاریخی و مکان‌های فرهنگی منتخب غزنی دیدن کنید.",
+        "experience": "میراث • فرهنگ • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival in Kabul",
+        "description": "Arrival in Kabul, airport transfer, hotel check-in, and a relaxed introduction to the city.",
+        "experience": "Arrival • Kabul • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Kabul → Bamyan",
+        "description": "Travel from Kabul to Bamyan through scenic mountain landscapes. Arrive in Bamyan and settle into the local environment.",
+        "experience": "Scenic Journey • Mountains • Bamyan"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Discover Bamyan",
+        "description": "Explore the Buddhas of Bamyan, ancient caves, Gholghola City, and selected heritage sites.",
+        "experience": "Heritage • Archaeology • History"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Band-e Amir",
+        "description": "Travel to Band-e Amir National Park and experience its spectacular lakes and mountain scenery.",
+        "experience": "Nature • Lakes • Mountains"
+      },
+      "day05": {
+        "days": "05",
+        "title": "Bamyan → Ghazni",
+        "description": "Travel toward Ghazni and experience the changing landscapes along the route. Arrive in Ghazni and explore selected local areas.",
+        "experience": "Scenic Journey • Local Life • Ghazni"
+      },
+      "day06": {
+        "days": "06",
+        "title": "Discover Ghazni & Departure",
+        "description": "Explore selected historic landmarks and cultural sites in Ghazni before continuing onward or beginning the departure journey.",
+        "experience": "Heritage • Culture • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "5 Nights Accommodation": "۵ شب اقامت",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "5 Nights Accommodation": "5 Nights Accommodation",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس وضعیت جاده‌ها، شرایط آب‌وهوا، دسترسی به مکان‌ها، شرایط محلی و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to road conditions, weather, site accessibility, local conditions, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/kabulPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+   {
+  "id": "tour-008",
+  "slug": "kandahar-helmand",
+
+  "fa": {
+    "title": "قندهار → هلمند",
+    "description": "سفری برای کشف میراث تاریخی و فرهنگی جنوب افغانستان.",
+    "locations": "قندهار • هلمند",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "جنوب افغانستان را کشف کنید",
+    "subtitleDescription": "جنوب افغانستان را در سفری تجربه کنید که ویژگی تاریخی قندهار را با میراث باستانی و مناظر هلمند پیوند می‌دهد. مسیری با دقت طراحی‌شده که تاریخ، فرهنگ، زندگی محلی و میراث را در کنار هم قرار می‌دهد.",
+    "days": "۴",
+    "nights": "۳"
+  },
+
+  "en": {
+    "title": "Kandahar → Helmand",
+    "description": "Explore the historical and cultural heritage of southern Afghanistan.",
+    "locations": "Kandahar • Helmand",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Southern Afghanistan",
+    "subtitleDescription": "Experience southern Afghanistan through a journey connecting the historic character of Kandahar with the ancient heritage and landscapes of Helmand. A carefully designed route combining history, culture, local life, and heritage.",
+    "days": 4,
+    "nights": 3
+  },
+
+  "destinationIds": [
+    "destination-007",
+    "destination-010"
+  ],
+
+  "card": {
+    "fa": {
+      "kandahar": {
+        "title": "قندهار",
+        "description": "ویژگی تاریخی و میراث فرهنگی شهر قندهار را کشف کنید."
+      },
+      "ahmadShahDurraniHeritage": {
+        "title": "میراث احمدشاه درانی",
+        "description": "از مکان‌ها و نشانه‌های تاریخی مرتبط با تاریخ قندهار دیدن کنید."
+      },
+      "helmandHeritage": {
+        "title": "میراث هلمند",
+        "description": "بقایای تاریخی قلعه بست را کشف کنید."
+      },
+      "ancientLandscapes": {
+        "title": "مناظر باستانی",
+        "description": "مناظر منحصربه‌فرد و متفاوت جنوب افغانستان را تجربه کنید."
+      },
+      "localCulture": {
+        "title": "فرهنگ محلی",
+        "description": "سنت‌های محلی، مهمان‌نوازی و زندگی روزمره مردم را تجربه کنید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاهای محلی و طعم‌های سنتی لذت ببرید."
+      }
+    },
+
+    "en": {
+      "kandahar": {
+        "title": "Kandahar",
+        "description": "Discover the city's historic character and cultural heritage."
+      },
+      "ahmadShahDurraniHeritage": {
+        "title": "Ahmad Shah Durrani Heritage",
+        "description": "Explore landmarks connected to Kandahar's history."
+      },
+      "helmandHeritage": {
+        "title": "Helmand Heritage",
+        "description": "Discover the historic remains of Qala-e-Bost."
+      },
+      "ancientLandscapes": {
+        "title": "Ancient Landscapes",
+        "description": "Experience the distinctive landscapes of southern Afghanistan."
+      },
+      "localCulture": {
+        "title": "Local Culture",
+        "description": "Experience local traditions, hospitality, and everyday life."
+      },
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود به قندهار",
+        "description": "ورود به قندهار، پذیرش در هتل و آشنایی آرام با شهر.",
+        "experience": "ورود • قندهار • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "کشف قندهار",
+        "description": "از مکان‌های تاریخی، فرهنگی و بخش‌هایی از شهر که با تاریخ طولانی قندهار ارتباط دارند، دیدن کنید.",
+        "experience": "تاریخ • میراث • فرهنگ"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "قندهار → هلمند",
+        "description": "به سوی هلمند سفر کنید و از مکان‌های تاریخی منتخب، از جمله بقایای تاریخی قلعه بست، دیدن کنید.",
+        "experience": "سفر دیدنی • میراث باستانی • اکتشاف"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "هلمند و بازگشت",
+        "description": "از آخرین تجربه خود در هلمند لذت ببرید و سپس سفر ادامه مسیر یا بازگشت را آغاز کنید.",
+        "experience": "میراث • زندگی محلی • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival in Kandahar",
+        "description": "Arrival in Kandahar, hotel check-in, and a relaxed introduction to the city.",
+        "experience": "Arrival • Kandahar • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Discover Kandahar",
+        "description": "Explore selected historic landmarks, cultural sites, and areas connected to Kandahar's long history.",
+        "experience": "History • Heritage • Culture"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Kandahar → Helmand",
+        "description": "Travel toward Helmand and explore selected heritage sites, including the historic remains of Qala-e-Bost.",
+        "experience": "Scenic Journey • Ancient Heritage • Exploration"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Helmand & Departure",
+        "description": "Enjoy a final experience in Helmand before beginning the onward or departure journey.",
+        "experience": "Heritage • Local Life • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "3 Nights Accommodation": "۳ شب اقامت",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "3 Nights Accommodation": "3 Nights Accommodation",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس وضعیت جاده‌ها، شرایط آب‌وهوا، دسترسی به مکان‌ها، شرایط محلی و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to road conditions, weather, site accessibility, local conditions, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/kandaharPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+   {
+  "id": "tour-009",
+  "slug": "herat-ghor",
+
+  "fa": {
+    "title": "هرات → غور",
+    "description": "سفری برای کشف میراث تاریخی و فرهنگی هرات و غور.",
+    "locations": "هرات • غور",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "غرب افغانستان را کشف کنید",
+    "subtitleDescription": "میراث شگفت‌انگیز غرب افغانستان را در سفری از شهر تاریخی هرات تا مناره باشکوه جام در کوهستان‌های غور تجربه کنید. سفری که میراث تیموری، معماری باستانی، تاریخ فرهنگی و مناظر چشم‌گیر را در کنار هم قرار می‌دهد.",
+    "days": "۵",
+    "nights": "۴"
+  },
+
+  "en": {
+    "title": "Herat → Ghor",
+    "description": "Discover the historical and cultural heritage of Herat and Ghor.",
+    "locations": "Herat • Ghor",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Western Afghanistan",
+    "subtitleDescription": "Experience the remarkable heritage of western Afghanistan through the historic city of Herat and the extraordinary Minaret of Jam in the mountains of Ghor. A journey combining Timurid heritage, ancient architecture, cultural history, and dramatic landscapes.",
+    "days": 5,
+    "nights": 4
+  },
+
+  "destinationIds": [
+    "destination-004",
+    "destination-011"
+  ],
+
+  "card": {
+    "fa": {
+      "heratCitadel": {
+        "title": "قلعه هرات",
+        "description": "از یکی از مهم‌ترین بناهای تاریخی شهر هرات دیدن کنید."
+      },
+      "fridayMosque": {
+        "title": "مسجد جامع هرات",
+        "description": "معماری چشم‌گیر اسلامی و میراث تاریخی شهر هرات را کشف کنید."
+      },
+      "musallaComplex": {
+        "title": "مجموعه مصلی",
+        "description": "بقایای به‌جامانده از میراث ارزشمند دوره تیموری هرات را تجربه کنید."
+      },
+      "heratMuseum": {
+        "title": "موزه هرات",
+        "description": "گنجینه‌ها و آثار منتخب مربوط به تاریخ منطقه را کشف کنید."
+      },
+      "minaretOfJam": {
+        "title": "مناره جام",
+        "description": "از بنای تاریخی شگفت‌انگیز قرن دوازدهم در کوهستان‌های ناهموار غور دیدن کنید."
+      },
+      "scenicJourney": {
+        "title": "سفر دیدنی",
+        "description": "تغییر چشم‌اندازها و مناظر میان هرات و غور را تجربه کنید."
+      }
+    },
+
+    "en": {
+      "heratCitadel": {
+        "title": "Herat Citadel",
+        "description": "Explore one of Herat's most important historic landmarks."
+      },
+      "fridayMosque": {
+        "title": "Friday Mosque",
+        "description": "Discover the city's remarkable Islamic architecture."
+      },
+      "musallaComplex": {
+        "title": "Musalla Complex",
+        "description": "Experience the surviving remains of Herat's Timurid heritage."
+      },
+      "heratMuseum": {
+        "title": "Herat Museum",
+        "description": "Discover selected treasures from the region's history."
+      },
+      "minaretOfJam": {
+        "title": "Minaret of Jam",
+        "description": "Visit the UNESCO-listed 12th-century monument in the rugged mountains of Ghor."
+      },
+      "scenicJourney": {
+        "title": "Scenic Journey",
+        "description": "Experience the changing landscapes between Herat and Ghor."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود به هرات",
+        "description": "ورود به هرات، پذیرش در هتل و آشنایی آرام با این شهر تاریخی.",
+        "experience": "ورود • هرات • زندگی محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "کشف هرات",
+        "description": "از قلعه هرات، مسجد جامع، موزه هرات، مجموعه مصلی و بخش‌های تاریخی منتخب شهر دیدن کنید.",
+        "experience": "تاریخ • معماری • میراث تیموری"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "هرات → غور",
+        "description": "سفر به سوی مناره جام را آغاز کنید. مناره جام در حدود ۲۱۵ کیلومتری شرق هرات قرار دارد. به دلیل مسیر کوهستانی و شرایط جاده، این سفر ممکن است بسته به آب‌وهوا، وضعیت جاده‌ها و شرایط محلی حدود ۱۰ تا ۱۵ ساعت با موتر طول بکشد. پس از رسیدن به منطقه جام، برای شب اقامت کنید.",
+        "experience": "سفر کوهستانی • مناظر • اکتشاف"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "مناره جام → هرات",
+        "description": "از مناره جام، بنای تاریخی شگفت‌انگیز قرن دوازدهم که در میان مناظر کوهستانی ناهموار غور قرار دارد، دیدن کنید و سپس سفر بازگشت به سوی هرات را آغاز کنید.",
+        "experience": "میراث باستانی • معماری • کوهستان"
+      },
+      "day05": {
+        "days": "۰۵",
+        "title": "هرات و بازگشت",
+        "description": "به هرات بازگردید و مطابق برنامه سفر، هماهنگی‌های ادامه مسیر یا بازگشت را تکمیل کنید.",
+        "experience": "هرات • تجربه نهایی • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival in Herat",
+        "description": "Arrival in Herat, hotel check-in, and a relaxed introduction to the historic city.",
+        "experience": "Arrival • Herat • Local Life"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Discover Herat",
+        "description": "Explore the Herat Citadel, Friday Mosque, Herat Museum, Musalla Complex, and selected historic areas of the city.",
+        "experience": "History • Architecture • Timurid Heritage"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Herat → Ghor",
+        "description": "Begin the journey toward the Minaret of Jam. The Minaret of Jam is approximately 215 km east of Herat. Due to rugged terrain and road conditions, the journey may take approximately 10–15 hours by road, depending on weather, road conditions, and local circumstances. Arrive in the Jam area and settle in for the night.",
+        "experience": "Mountain Journey • Landscapes • Exploration"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Minaret of Jam → Herat",
+        "description": "Visit the Minaret of Jam, a remarkable 12th-century monument rising within the rugged mountain landscape of Ghor. Begin the return journey toward Herat.",
+        "experience": "Ancient Heritage • Architecture • Mountains"
+      },
+      "day05": {
+        "days": "05",
+        "title": "Herat & Departure",
+        "description": "Return to Herat and complete the onward or departure arrangements according to the travel plan.",
+        "experience": "Herat • Final Experience • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "4 Nights Accommodation": "۴ شب اقامت",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "4 Nights Accommodation": "4 Nights Accommodation",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "سفر به مناره جام شامل یک مسیر طولانی و دشوار کوهستانی است. برنامه سفر ممکن است بر اساس وضعیت جاده‌ها، شرایط آب‌وهوا، دسترسی به مکان‌ها، شرایط محلی و ملاحظات اجرایی تغییر کند. زمان سفر میان هرات و مناره جام تقریبی است و ممکن است به میزان قابل توجهی تغییر کند."
+    },
+    "en": {
+      "first": "The journey to the Minaret of Jam involves a long and challenging mountain route. The itinerary may be adjusted according to road conditions, weather, site accessibility, local conditions, and operational considerations. Travel time between Herat and the Minaret of Jam is approximate and may vary considerably."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/ghorPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+},
+   {
+  "id": "tour-010",
+  "slug": "mazar-balkh-samangan",
+
+  "fa": {
+    "title": "مزار شریف → بلخ → سمنگان",
+    "description": "سفری برای کشف میراث تاریخی و فرهنگی شمال افغانستان.",
+    "locations": "مزار شریف • بلخ • سمنگان",
+    "travelStyle": "تجربه میراث و فرهنگ",
+    "package": "معرفی بسته",
+    "subtitle": "شمال افغانستان را کشف کنید",
+    "subtitleDescription": "میراث باستانی شمال افغانستان را در سفری تجربه کنید که فضای فرهنگی مزار شریف، شهر تاریخی بلخ و میراث باستان‌شناختی سمنگان را به هم پیوند می‌دهد. مسیری با دقت طراحی‌شده که تاریخ باستان، معماری، فرهنگ و تجربه‌های محلی را در کنار هم قرار می‌دهد.",
+    "days": "۵",
+    "nights": "۴"
+  },
+
+  "en": {
+    "title": "Mazar-i-Sharif → Balkh → Samangan",
+    "description": "Explore the historical and cultural heritage of northern Afghanistan.",
+    "locations": "Mazar-i-Sharif • Balkh • Samangan",
+    "travelStyle": "Heritage & Cultural Experience",
+    "package": "Package Overview",
+    "subtitle": "Discover Northern Afghanistan",
+    "subtitleDescription": "Experience the ancient heritage of northern Afghanistan through a journey connecting the cultural atmosphere of Mazar-i-Sharif, the historic city of Balkh, and the archaeological heritage of Samangan. A carefully designed route combining ancient history, architecture, culture, and local experiences.",
+    "days": 5,
+    "nights": 4
+  },
+
+  "destinationIds": [
+    "destination-005",
+    "destination-006",
+    "destination-012"
+  ],
+
+  "card": {
+    "fa": {
+      "blueMosque": {
+        "title": "مسجد کبود",
+        "description": "از یکی از نمادهای شناخته‌شده و برجسته مزار شریف دیدن کنید."
+      },
+      "ancientBalkh": {
+        "title": "بلخ باستان",
+        "description": "میراث یکی از مراکز تاریخی و فرهنگی مهم منطقه را کشف کنید."
+      },
+      "balkhHeritage": {
+        "title": "میراث بلخ",
+        "description": "از مکان‌های باستان‌شناختی و تاریخی منتخب بلخ دیدن کنید."
+      },
+      "takhtERustam": {
+        "title": "تخت رستم",
+        "description": "بنای شگفت‌انگیز بودایی تراشیده‌شده در دل سنگ در سمنگان را کشف کنید."
+      },
+      "localMarkets": {
+        "title": "بازارهای محلی",
+        "description": "محصولات سنتی، صنایع دستی و زندگی روزمره مردم محلی را تجربه کنید."
+      },
+      "afghanCuisine": {
+        "title": "غذاهای افغانی",
+        "description": "از تجربه‌های منتخب غذاهای محلی و طعم‌های سنتی لذت ببرید."
+      }
+    },
+
+    "en": {
+      "blueMosque": {
+        "title": "Blue Mosque",
+        "description": "Experience the iconic landmark of Mazar-i-Sharif."
+      },
+      "ancientBalkh": {
+        "title": "Ancient Balkh",
+        "description": "Explore the heritage of one of the region's historic centers."
+      },
+      "balkhHeritage": {
+        "title": "Balkh Heritage",
+        "description": "Discover selected archaeological and historical sites."
+      },
+      "takhtERustam": {
+        "title": "Takht-e Rustam",
+        "description": "Explore the remarkable rock-cut Buddhist monument of Samangan."
+      },
+      "localMarkets": {
+        "title": "Local Markets",
+        "description": "Experience traditional products, crafts, and local life."
+      },
+      "afghanCuisine": {
+        "title": "Afghan Cuisine",
+        "description": "Enjoy selected local dining experiences and traditional flavors."
+      }
+    }
+  },
+
+  "journeyCard": {
+    "fa": {
+      "day01": {
+        "days": "۰۱",
+        "title": "ورود به مزار شریف",
+        "description": "ورود به مزار شریف، پذیرش در هتل و آشنایی آرام با شهر.",
+        "experience": "ورود • زندگی شهری • فرهنگ محلی"
+      },
+      "day02": {
+        "days": "۰۲",
+        "title": "مزار شریف و بلخ",
+        "description": "از مسجد کبود دیدن کنید و سپس به سوی بلخ سفر کنید تا مکان‌های تاریخی و باستان‌شناختی منتخب را کشف کنید.",
+        "experience": "میراث • باستان‌شناسی • تاریخ باستان"
+      },
+      "day03": {
+        "days": "۰۳",
+        "title": "کشف بلخ → سمنگان",
+        "description": "سفر را به سوی سمنگان ادامه دهید و تغییر مناظر شمال افغانستان را در طول مسیر تجربه کنید.",
+        "experience": "سفر دیدنی • میراث • زندگی محلی"
+      },
+      "day04": {
+        "days": "۰۴",
+        "title": "کشف سمنگان",
+        "description": "از تخت رستم و مکان‌های تاریخی منتخب اطراف آن دیدن کنید و سپس تجربه خود را در فضای محلی ادامه دهید.",
+        "experience": "باستان‌شناسی • میراث باستانی • اکتشاف"
+      },
+      "day05": {
+        "days": "۰۵",
+        "title": "تجربه نهایی و بازگشت",
+        "description": "از آخرین تجربه محلی خود لذت ببرید و مطابق برنامه سفر، مسیر ادامه یا بازگشت را آغاز کنید.",
+        "experience": "زندگی محلی • فرهنگ • بازگشت"
+      }
+    },
+
+    "en": {
+      "day01": {
+        "days": "01",
+        "title": "Arrival in Mazar-i-Sharif",
+        "description": "Arrival in Mazar-i-Sharif, hotel check-in, and a relaxed introduction to the city.",
+        "experience": "Arrival • City Life • Local Culture"
+      },
+      "day02": {
+        "days": "02",
+        "title": "Mazar-i-Sharif & Balkh",
+        "description": "Explore the Blue Mosque before traveling to Balkh to discover selected historic and archaeological sites.",
+        "experience": "Heritage • Archaeology • Ancient History"
+      },
+      "day03": {
+        "days": "03",
+        "title": "Discover Balkh → Samangan",
+        "description": "Continue the journey toward Samangan, experiencing the changing landscapes of northern Afghanistan along the route.",
+        "experience": "Scenic Journey • Heritage • Local Life"
+      },
+      "day04": {
+        "days": "04",
+        "title": "Discover Samangan",
+        "description": "Explore Takht-e Rustam and selected surrounding historical sites before continuing the local experience.",
+        "experience": "Archaeology • Ancient Heritage • Exploration"
+      },
+      "day05": {
+        "days": "05",
+        "title": "Final Experience & Departure",
+        "description": "Enjoy a final local experience before beginning the onward or departure journey according to the travel plan.",
+        "experience": "Local Life • Culture • Departure"
+      }
+    }
+  },
+
+  "included": {
+    "fa": {
+      "4 Nights Accommodation": "۴ شب اقامت",
+      "Transportation Throughout the Journey": "حمل‌ونقل در طول سفر",
+      "Professional Local Guide": "راهنمای محلی حرفه‌ای",
+      "Selected Activities & Visits": "فعالیت‌ها و بازدیدهای منتخب",
+      "Travel Support": "پشتیبانی سفر"
+    },
+    "en": {
+      "4 Nights Accommodation": "4 Nights Accommodation",
+      "Transportation Throughout the Journey": "Transportation Throughout the Journey",
+      "Professional Local Guide": "Professional Local Guide",
+      "Selected Activities & Visits": "Selected Activities & Visits",
+      "Travel Support": "Travel Support"
+    }
+  },
+
+  "notIncluded": {
+    "fa": {
+      "International Flights": "پروازهای بین‌المللی",
+      "Visa Fees": "هزینه ویزا",
+      "Travel Insurance": "بیمه سفر",
+      "Personal Expenses": "هزینه‌های شخصی",
+      "Meals Not Specified": "وعده‌های غذایی مشخص‌نشده",
+      "Additional Activities": "فعالیت‌های اضافی"
+    },
+    "en": {
+      "International Flights": "International Flights",
+      "Visa Fees": "Visa Fees",
+      "Travel Insurance": "Travel Insurance",
+      "Personal Expenses": "Personal Expenses",
+      "Meals Not Specified": "Meals Not Specified",
+      "Additional Activities": "Additional Activities"
+    }
+  },
+
+  "importantInformation": {
+    "fa": {
+      "first": "برنامه سفر ممکن است بر اساس وضعیت جاده‌ها، شرایط آب‌وهوا، دسترسی به مکان‌ها، شرایط محلی و ملاحظات اجرایی تغییر کند."
+    },
+    "en": {
+      "first": "The itinerary may be adjusted according to road conditions, weather, site accessibility, local conditions, and operational considerations."
+    }
+  },
+
+  "price": 0,
+  "currency": "USD",
+  "image": "tours/images/mazarPictures.webp",
+  "heroDetailImage": "tours/images/kandaharPictures.webp",
+  "isActive": true,
+  "createdAt": "2026-09-28T08:00:00Z"
+}
 ],
 
 "services": [
