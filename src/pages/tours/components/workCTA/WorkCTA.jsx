@@ -1,6 +1,6 @@
 const WorkCTA = ({ icon, number, title, description }) => {
   return (
-    <section className="shadow rounded-lg flex gap-3  items-center py-2 px-4">
+    <section className="transition-all duration-300 hover:-translate-y-1 hover:shadow-xl shadow rounded-lg flex gap-3  items-center py-2 px-4">
       <div className="shrink-0 h-6 w-6 sm:h-8 sm:w-8 bg-[var(--color-amovi-navy)] text-[var(--color-amovi-gray-light)] rounded-full flex    items-center justify-center">
         {number}
       </div>
@@ -9,7 +9,7 @@ const WorkCTA = ({ icon, number, title, description }) => {
       </div>
       <div>
         <p className="font-bold py-1 text-lg">{title}</p>
-        <p className="text-sm leading-relaxed sm:text-base">{description}</p>
+        <p className="text-sm leading-relaxed ">{description}</p>
       </div>
     </section>
   );

@@ -27,6 +27,21 @@
   },
 
   "tourPage":{
+    "tourDetail":{
+        "eyebrow": "Price & Booking",
+        "title": "Price Upon Request",
+        "description": "Final pricing depends on travel dates, grous size, accommodation, transportation, and selected services.",
+        "cta": "Request This Package",
+        "booking": "Secure Booking",
+        "support": "Support 24/7",
+        "rates": "Best Rates"
+      },
+      "journey": "Your Journey",
+      "AJourneyToRember": "A Journey to Remember",
+      "included": "What's Included",
+      "package": " — Package details",
+      "excluded": "What's Not Included",
+      "information": "Important Information",
       "heroSection": {
       "label": "TOUR PACKAGES",
       "title": "Tour",
@@ -53,7 +68,9 @@
   "people": "People",
   "meetNow": "Meet Now",
   "days": "Days",
-  "nights": "Nights"
+  "day": "Day",
+  "nights": "Nights",
+  "requestThisPackage": "Request This Package"
   },
 
   "travelCTA": {

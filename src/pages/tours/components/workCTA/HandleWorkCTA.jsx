@@ -37,11 +37,11 @@ const HandleWorkCTA = () => {
   ];
   return (
     <section className="m-auto max-w-[1600px]">
-      <p className="text-center text-[var(--color-amovi-gold)]">
+      <p className="text-center text-xs text-[var(--color-amovi-gold)]">
         {workCTA.eyebrow}
       </p>
 
-      <h2 className="mb-2 text-center text-2xl font-semibold text-[var(--color-amovi-navy)] sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 className="mb-2 text-center text-2xl md:text-[28px] xl:text-[38px] font-semibold text-[var(--color-amovi-navy)] ">
         {workCTA.title}
       </h2>
       <div className="m-10 grid min-[560px]:max-[892px]:grid-cols-2 gap-4  min-[892px]:max-[1230px]:grid-cols-3 min-[1230px]:grid-cols-4 text-[var(--color-amovi-navy)]">

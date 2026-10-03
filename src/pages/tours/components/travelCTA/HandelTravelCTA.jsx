@@ -51,7 +51,7 @@ const HandelTravelCTA = () => {
         {cta.eyebrow}
       </p>
 
-      <h2 className="mb-2 text-center text-2xl font-semibold text-[var(--color-amovi-navy)] sm:text-3xl md:text-4xl lg:text-5xl">
+      <h2 className="mb-2 text-center text-2xl text-2xl md:text-[28px] xl:text-[38px] font-semibold text-[var(--color-amovi-navy)] ">
         {cta.title}
       </h2>
 

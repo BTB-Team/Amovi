@@ -1,10 +1,7 @@
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import { useLangStore } from "../../../store/useLangStore";
 const ExploreSection = () => {
-  const { currentLang, translations } = useLangStore();
+  const { translations } = useLangStore();
   const explore = translations.tourPage.exploreSection;
-
-  const isRTL = currentLang === "fa";
 
   return (
     <section
@@ -16,20 +13,12 @@ const ExploreSection = () => {
           {explore.label}
         </p>
 
-        <h2 className="text-2xl font-semibold mb-2 sm:text-3xl md:text-4xl lg:text-5xl">
+        <h2 className="mb-3  text-2xl lg:text-[38px] tracking-tight  font-extrabold  leading-[1.2]   text-[#14213D]">
           {explore.title}
         </h2>
-        <p className="text-center text-sm mb-2 leading-relaxed sm:text-base md:text-lg md:mb-3 lg:text-xl">
+        <p className="text-center text-base mb-2 leading-relaxed  md:mb-3 ">
           {explore.description}
         </p>
-        <button className="mx-auto flex cursor-pointer gap-3 rounded-full bg-[var(--color-amovi-gold)] px-3 py-1 text-sm font-bold text-[var(--color-amovi-navy)] sm:py-2 xl:py-3 xl:px-6 xl:text-base">
-          {explore.button}
-          {isRTL ? (
-            <ArrowLeft className="mt-1 self-center" size={16} />
-          ) : (
-            <ArrowRight className="mt-1 self-center" size={16} />
-          )}
-        </button>
       </div>
     </section>
   );
